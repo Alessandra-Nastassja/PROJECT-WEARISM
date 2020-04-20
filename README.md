@@ -54,3 +54,8 @@ Os layouts abaixo servem de referência visual das funcionalidades, sintam-se li
 *Mobile*
 
 ![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_mobile.png)
+
+
+## Fluxo das páginas
+
+![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/fluxo.png)

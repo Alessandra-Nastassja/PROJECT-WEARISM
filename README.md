@@ -1,7 +1,7 @@
 # Projeto: Wearism (Fashionista E-commerce)
 E-commerce de moda feminina.
 
-Desenvolvedoras:
+Desenvolvedora:
 [Alessandra](https://github.com/Alessandra-Nastassja)
 
 #### React acelera dev @codenation 
@@ -9,17 +9,17 @@ Desenvolvedoras:
 ****
 ## *Sobre o projeto* ⭐️
 
-### *Objetivo*
+### *Objetivo:* 📌 
 
 Como um profissional front-end, você será responsável por desenvolver as principais funcionalidades de um e-commerce de moda feminina, o Fashionista, garantindo a melhor experiência possível para os usuários interagirem com os produtos.
 
-### *Cenário*
+### *Cenário:* 📌 
 
 Segundo o levantamento, da Webshoppers (Ebit / Nielsen), os e-commerces brasileiros faturaram cerca de R$ 53,2 bilhões em 2018. O segmento “Moda e Acessórios” representa 5,6% do faturamento no varejo online, ocupando a segunda posição entre as categorias de produtos com mais pedidos, perdendo apenas para o segmento de eletroeletrônicos.
 
 Oferecer a melhor experiência aos usuários que interagem com os produtos no desktop, e principalmente em dispositivos móveis, é fundamental para se manter vivo e competitivo nesse segmento.
 
-### *Principais funcionalidades:*
+### *Principais funcionalidades:* 📌 
 
 - Deve implementar as funcionalidades apresentadas nos wireframes / layouts.
 - Deve ser mobile first, possuindo uma experiência satisfatória tanto em mobile quanto em desktop.
@@ -44,13 +44,13 @@ Deve ser possível adicionar itens por tamanho no carrinho de compras.
 
 - Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade.
 
-### *Requisitos opcionais*
+### *Requisitos opcionais:* 📌 
 
 - O carrinho de compras deve persistir entre reloads de página.
 - Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque.
 - Implemente a funcionalidade de busca em tempo real.
 
-### *Wireframe:*
+### *Wireframe:* 📌 
 
 Os layouts abaixo servem de referência visual das funcionalidades, sintam-se livres para segui-las ou implementá-las com base em outras referências, desde que atenda às regras e aos requisitos obrigatórios.
 
@@ -62,13 +62,17 @@ Os layouts abaixo servem de referência visual das funcionalidades, sintam-se li
 
 ![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_mobile.png)
 
+#### *Cores e tipografia*
+
+![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/cores.jpg)
+
 ### *Fluxograma do sistema*
 
 Para ver o fluxo em detalhes, clique [aqui](https://whimsical.com/KvoQMy6dBcFU7bABk6UYY2)
 
 ![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/fluxo.png)
 
-### *Tecnologias usadas:*
+### *Tecnologias usadas:* 📌 
 
 - [React](https://pt-br.reactjs.org/docs/getting-started.html);
 - [React Redux](https://redux.js.org/introduction/getting-started)

@@ -46,3 +46,6 @@ Deve ser possível adicionar itens por tamanho no carrinho de compras.
 ## Layouts
 
 Os layouts abaixo servem de referência visual das funcionalidades, sintam-se livres para segui-las ou implementá-las com base em outras referências, desde que atenda às regras e aos requisitos obrigatórios.
+
+![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_desktop.png)
+![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_mobile.png)

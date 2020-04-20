@@ -56,8 +56,8 @@ Os layouts abaixo servem de referência visual das funcionalidades, sintam-se li
 ![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_mobile.png)
 
 
-## Fluxo das páginas
+## Fluxo do sistema
 
-Para ver os fluxos clique [aqui](https://whimsical.com/KvoQMy6dBcFU7bABk6UYY2)
+Para ver o fluxo em detalhes, clique [aqui](https://whimsical.com/KvoQMy6dBcFU7bABk6UYY2)
 
 ![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/fluxo.png)

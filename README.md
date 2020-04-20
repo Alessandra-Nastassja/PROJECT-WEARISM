@@ -1,7 +1,7 @@
 # Projeto: Wearism (Fashionista E-commerce)
 E-commerce de moda feminina.
 
-Desenvolvedoras:
+Desenvolvedora:
 [Alessandra](https://github.com/Alessandra-Nastassja)
 
 #### React acelera dev @codenation 
@@ -61,6 +61,10 @@ Os layouts abaixo servem de referência visual das funcionalidades, sintam-se li
 *Mobile*
 
 ![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_mobile.png)
+
+#### *Cores e tipografia*
+
+![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/cores.jpg)
 
 ### *Fluxograma do sistema*
 

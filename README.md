@@ -58,4 +58,6 @@ Os layouts abaixo servem de referência visual das funcionalidades, sintam-se li
 
 ## Fluxo das páginas
 
+Para ver os fluxos clique [aqui](https://whimsical.com/KvoQMy6dBcFU7bABk6UYY2)
+
 ![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/fluxo.png)

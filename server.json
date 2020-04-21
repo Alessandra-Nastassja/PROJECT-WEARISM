@@ -7,13 +7,16 @@
         "preco": 13.99,
         "preco_promocional": 10.00,
         "status": [
-            "Em Promoção"
+            "promocao"
         ],
         "tamanhos_disponiveis": [
             "32"
         ],
         "selo": [
-            "Promoção"
+            "promocao"
+        ],
+        "categorias": [
+            "moda"
         ]
        } 
     ]

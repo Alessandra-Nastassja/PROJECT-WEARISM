@@ -1,0 +1,23 @@
+{
+    "produtos": [
+       {
+        "id":1,
+        "imagem": "url",
+        "nome": "Produto 1",
+        "preco": 13.99,
+        "preco_promocional": 10.00,
+        "status": [
+            "promocao"
+        ],
+        "tamanhos_disponiveis": [
+            "32"
+        ],
+        "selo": [
+            "promocao"
+        ],
+        "categorias": [
+            "moda"
+        ]
+       } 
+    ]
+}

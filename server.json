@@ -1,23 +1,175 @@
 {
     "produtos": [
-       {
-        "id":1,
-        "imagem": "url",
-        "nome": "Produto 1",
-        "preco": 13.99,
-        "preco_promocional": 10.00,
-        "status": [
-            "promocao"
-        ],
-        "tamanhos_disponiveis": [
-            "32"
-        ],
-        "selo": [
-            "promocao"
-        ],
-        "categorias": [
-            "moda"
-        ]
-       } 
+        {
+            "id": 1,
+            "imagem": "src/assets/imagens/3521.jpg",
+            "nome": "Produto 1",
+            "preco": 13.99,
+            "preco_promocional": 10.00,
+            "status": [
+                "promocao"
+            ],
+            "tamanhos_disponiveis": [
+                "32"
+            ],
+            "selo": [
+                "promocao"
+            ],
+            "categorias": [
+                "moda"
+            ]
+        },
+        {
+            "id": 2,
+            "imagem": "src/assets/imagens/4887.jpg",
+            "nome": "Produto 2",
+            "preco": 19.99,
+            "preco_promocional": null,
+            "status": [],
+            "tamanhos_disponiveis": [
+                "P",
+                "M",
+                "G"
+            ],
+            "selo": [],
+            "categorias": [
+                "moda",
+                "bolsa"
+            ]
+        },
+        {
+            "id": 3,
+            "imagem": "src/assets/imagens/6518.jpg",
+            "nome": "Produto 3",
+            "preco": 29.99,
+            "preco_promocional": 20.00,
+            "status": [],
+            "tamanhos_disponiveis": [
+                "P",
+                "M"
+            ],
+            "selo": [],
+            "categorias": [
+                "moda",
+                "bolsa"
+            ]
+        },
+        {
+            "id": 4,
+            "imagem": "src/assets/imagens/7829.jpg",
+            "nome": "Produto 4",
+            "preco": 29.99,
+            "preco_promocional": 20.00,
+            "status": [],
+            "tamanhos_disponiveis": [
+                "M",
+                "G"
+            ],
+            "selo": [],
+            "categorias": [
+                "moda",
+                "bolsa"
+            ]
+        },
+        {
+            "id": 5,
+            "imagem": "src/assets/imagens/11999.jpg",
+            "nome": "Produto 5",
+            "preco": 49.99,
+            "preco_promocional": null,
+            "status": [
+                "promocao"
+            ],
+            "tamanhos_disponiveis": [
+                "32",
+                "36"
+            ],
+            "selo": [
+                "promocao"
+            ],
+            "categorias": [
+                "moda"
+            ]
+        },
+        {
+            "id": 6,
+            "imagem": "src/assets/imagens/17161.jpg",
+            "nome": "Produto 6",
+            "preco": 79.99,
+            "preco_promocional": 65.90,
+            "status": [
+                "promocao"
+            ],
+            "tamanhos_disponiveis": [
+                "34",
+                "36"
+            ],
+            "selo": [
+                "promocao"
+            ],
+            "categorias": [
+                "moda"
+            ]
+        },
+        {
+            "id": 7,
+            "imagem": "src/assets/imagens/29704.jpg",
+            "nome": "Produto 7",
+            "preco": 39.99,
+            "preco_promocional": 20.20,
+            "status": [
+                "promocao"
+            ],
+            "tamanhos_disponiveis": [
+                "38",
+                "40"
+            ],
+            "selo": [
+                "promocao"
+            ],
+            "categorias": [
+                "moda"
+            ]
+        },
+        {
+            "id": 8,
+            "imagem": "src/assets/imagens/625451.jpg",
+            "nome": "Produto 8",
+            "preco": 19.99,
+            "preco_promocional": 9.99,
+            "status": [
+                "promocao"
+            ],
+            "tamanhos_disponiveis": [
+                "40",
+                "42"
+            ],
+            "selo": [
+                "promocao"
+            ],
+            "categorias": [
+                "moda"
+            ]
+        },
+        {
+            "id": 9,
+            "imagem": "src/assets/imagens/2486463.jpg",
+            "nome": "Produto 9",
+            "preco": 19.99,
+            "preco_promocional": 9.99,
+            "status": [
+                "promocao"
+            ],
+            "tamanhos_disponiveis": [
+                "40",
+                "42"
+            ],
+            "selo": [
+                "promocao"
+            ],
+            "categorias": [
+                "moda"
+            ]
+        }
     ]
 }

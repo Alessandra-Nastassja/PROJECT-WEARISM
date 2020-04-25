@@ -6,15 +6,30 @@
             "nome": "Produto 1",
             "preco": 13.99,
             "preco_promocional": 10.00,
-            "status": [
-                "promocao"
-            ],
+            "em_promocao": true,
             "tamanhos_disponiveis": [
-                "32"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": true,
+                    "size": "P"
+                },
+                {
+                    "valido": true,
+                    "size": "M"
+                },
+                {
+                    "valido": true,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [
-                "promocao"
-            ],
+            "selo": true,
             "categorias": [
                 "moda"
             ]
@@ -25,13 +40,30 @@
             "nome": "Produto 2",
             "preco": 19.99,
             "preco_promocional": null,
-            "status": [],
+            "em_promocao": false,
             "tamanhos_disponiveis": [
-                "P",
-                "M",
-                "G"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": true,
+                    "size": "P"
+                },
+                {
+                    "valido": true,
+                    "size": "M"
+                },
+                {
+                    "valido": true,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [],
+            "selo": true,
             "categorias": [
                 "moda",
                 "bolsa"
@@ -43,12 +75,30 @@
             "nome": "Produto 3",
             "preco": 29.99,
             "preco_promocional": 20.00,
-            "status": [],
+            "em_promocao": true,
             "tamanhos_disponiveis": [
-                "P",
-                "M"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": true,
+                    "size": "P"
+                },
+                {
+                    "valido": true,
+                    "size": "M"
+                },
+                {
+                    "valido": false,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [],
+            "selo": true,
             "categorias": [
                 "moda",
                 "bolsa"
@@ -60,12 +110,30 @@
             "nome": "Produto 4",
             "preco": 29.99,
             "preco_promocional": 20.00,
-            "status": [],
+            "em_promocao": true,
             "tamanhos_disponiveis": [
-                "M",
-                "G"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": false,
+                    "size": "P"
+                },
+                {
+                    "valido": true,
+                    "size": "M"
+                },
+                {
+                    "valido": true,
+                    "size": "G"
+                },
+                {
+                    "valido": false,
+                    "size": "GG"
+                }
             ],
-            "selo": [],
+            "selo": true,
             "categorias": [
                 "moda",
                 "bolsa"
@@ -77,16 +145,30 @@
             "nome": "Produto 5",
             "preco": 49.99,
             "preco_promocional": null,
-            "status": [
-                "promocao"
-            ],
+            "em_promocao": false,
             "tamanhos_disponiveis": [
-                "32",
-                "36"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": false,
+                    "size": "P"
+                },
+                {
+                    "valido": false,
+                    "size": "M"
+                },
+                {
+                    "valido": true,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [
-                "promocao"
-            ],
+            "selo": true,
             "categorias": [
                 "moda"
             ]
@@ -97,16 +179,30 @@
             "nome": "Produto 6",
             "preco": 79.99,
             "preco_promocional": 65.90,
-            "status": [
-                "promocao"
-            ],
+            "em_promocao": true,
             "tamanhos_disponiveis": [
-                "34",
-                "36"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": false,
+                    "size": "P"
+                },
+                {
+                    "valido": false,
+                    "size": "M"
+                },
+                {
+                    "valido": true,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [
-                "promocao"
-            ],
+            "selo": true,
             "categorias": [
                 "moda"
             ]
@@ -117,16 +213,30 @@
             "nome": "Produto 7",
             "preco": 39.99,
             "preco_promocional": 20.20,
-            "status": [
-                "promocao"
-            ],
+            "em_promocao": true,
             "tamanhos_disponiveis": [
-                "38",
-                "40"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": false,
+                    "size": "P"
+                },
+                {
+                    "valido": false,
+                    "size": "M"
+                },
+                {
+                    "valido": true,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [
-                "promocao"
-            ],
+            "selo": true,
             "categorias": [
                 "moda"
             ]
@@ -137,16 +247,30 @@
             "nome": "Produto 8",
             "preco": 19.99,
             "preco_promocional": 9.99,
-            "status": [
-                "promocao"
-            ],
+            "em_promocao": true,
             "tamanhos_disponiveis": [
-                "40",
-                "42"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": false,
+                    "size": "P"
+                },
+                {
+                    "valido": false,
+                    "size": "M"
+                },
+                {
+                    "valido": false,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [
-                "promocao"
-            ],
+            "selo": true,
             "categorias": [
                 "moda"
             ]
@@ -157,16 +281,30 @@
             "nome": "Produto 9",
             "preco": 19.99,
             "preco_promocional": 9.99,
-            "status": [
-                "promocao"
-            ],
+            "em_promocao": true,
             "tamanhos_disponiveis": [
-                "40",
-                "42"
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": false,
+                    "size": "P"
+                },
+                {
+                    "valido": false,
+                    "size": "M"
+                },
+                {
+                    "valido": false,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
             ],
-            "selo": [
-                "promocao"
-            ],
+            "selo": true,
             "categorias": [
                 "moda"
             ]

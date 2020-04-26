@@ -308,6 +308,40 @@
             "categorias": [
                 "moda"
             ]
+        },
+        {
+            "id": 10,
+            "imagem": "",
+            "nome": "Produto 10",
+            "preco": 19.99,
+            "preco_promocional": 9.99,
+            "em_promocao": true,
+            "tamanhos_disponiveis": [
+                {
+                    "valido": false,
+                    "size": "PP"
+                },
+                {
+                    "valido": false,
+                    "size": "P"
+                },
+                {
+                    "valido": false,
+                    "size": "M"
+                },
+                {
+                    "valido": false,
+                    "size": "G"
+                },
+                {
+                    "valido": true,
+                    "size": "GG"
+                }
+            ],
+            "selo": true,
+            "categorias": [
+                "moda"
+            ]
         }
     ]
 }

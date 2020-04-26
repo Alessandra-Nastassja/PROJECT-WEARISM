@@ -1,0 +1,90 @@
+@import "src/App.scss";
+
+section {
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+
+.content__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 320px;
+    height: 100%;
+    margin: 10px 15px;
+
+    .card {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 350px;
+            border-radius: 15px;
+        }
+
+        .liked {
+            background: $branco;
+            padding: 15px 18px;
+            border-radius: 25px;
+            position: relative;
+            bottom: 70px;
+            left: 25px;
+            font-size: 18px;
+
+            i {
+                color: $cinza;
+            }
+        }
+
+        .liked:hover {
+            background-color: $roxo;
+
+            i {
+                color: $branco;
+            }
+        }
+
+        .card__img {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .card__title {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 15px;
+            line-height: 0px;
+
+            .title {
+                font-weight: 500;
+            }
+
+            .sub__title {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    section {
+        padding: 0 5%;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

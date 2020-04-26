@@ -2,7 +2,7 @@
     "produtos": [
         {
             "id": 1,
-            "imagem": "src/assets/imagens/3521.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/3521.jpg?alt=media&token=101ed682-4550-4947-b81e-a8a687877490",
             "nome": "Produto 1",
             "preco": 13.99,
             "preco_promocional": 10.00,
@@ -36,7 +36,7 @@
         },
         {
             "id": 2,
-            "imagem": "src/assets/imagens/4887.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/4887.jpg?alt=media&token=b90a4b2e-ac5d-45a2-bb03-0cbe08a1abf1",
             "nome": "Produto 2",
             "preco": 19.99,
             "preco_promocional": null,
@@ -71,7 +71,7 @@
         },
         {
             "id": 3,
-            "imagem": "src/assets/imagens/6518.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/6518.jpg?alt=media&token=e957a0d7-e3e7-4d11-ba5a-5e8d30fba681",
             "nome": "Produto 3",
             "preco": 29.99,
             "preco_promocional": 20.00,
@@ -106,7 +106,7 @@
         },
         {
             "id": 4,
-            "imagem": "src/assets/imagens/7829.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/7829.jpg?alt=media&token=8e05059a-003d-4a75-b5f3-64a9b7a61e6f",
             "nome": "Produto 4",
             "preco": 29.99,
             "preco_promocional": 20.00,
@@ -141,7 +141,7 @@
         },
         {
             "id": 5,
-            "imagem": "src/assets/imagens/11999.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/11999.jpg?alt=media&token=67771169-0d0a-4104-b982-2122fd3acd43",
             "nome": "Produto 5",
             "preco": 49.99,
             "preco_promocional": null,
@@ -175,7 +175,7 @@
         },
         {
             "id": 6,
-            "imagem": "src/assets/imagens/17161.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/17161.jpg?alt=media&token=29dd0416-7996-40ce-a1ae-c8c962e4be6e",
             "nome": "Produto 6",
             "preco": 79.99,
             "preco_promocional": 65.90,
@@ -209,7 +209,7 @@
         },
         {
             "id": 7,
-            "imagem": "src/assets/imagens/29704.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/29704.jpg?alt=media&token=bb7d552c-50dc-4707-9362-c1cd66fd0f83",
             "nome": "Produto 7",
             "preco": 39.99,
             "preco_promocional": 20.20,
@@ -243,7 +243,7 @@
         },
         {
             "id": 8,
-            "imagem": "src/assets/imagens/625451.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/625451.jpg?alt=media&token=09d39130-1c28-4bd2-8098-ca6e744c6735",
             "nome": "Produto 8",
             "preco": 19.99,
             "preco_promocional": 9.99,
@@ -277,7 +277,7 @@
         },
         {
             "id": 9,
-            "imagem": "src/assets/imagens/2486463.jpg",
+            "imagem": "https://firebasestorage.googleapis.com/v0/b/teste-b66a1.appspot.com/o/2486463.jpg?alt=media&token=d60c5003-7562-4e69-aacf-81e41981dd9f",
             "nome": "Produto 9",
             "preco": 19.99,
             "preco_promocional": 9.99,

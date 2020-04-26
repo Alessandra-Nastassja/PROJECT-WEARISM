@@ -6,6 +6,7 @@ section {
     justify-content: center;
     flex-direction: row !important;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .content__cards {
@@ -46,6 +47,17 @@ section {
             i {
                 color: $branco;
             }
+        }
+
+        .promocao {
+            position: relative;
+            bottom: 340px;
+            right: -210px;
+            z-index: 1;
+            background-color: #000;
+            color: #fff;
+            padding: 2px 5px;
+            font-size: 15px;
         }
 
         .card__img {

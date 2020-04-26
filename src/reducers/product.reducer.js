@@ -4,23 +4,25 @@ const defaultState = {
     error: null,
     products: [],
     isLoading: false,
-}
+}   
 
-const produtcReducer = (state = defaultState, action) => {
+const productReducer = (state = defaultState, action) => { 
+    
+    // Verifica qual ação ele deve tomar
     switch (action.type) {
         
         case FETCH_PRODUCTS_LOADING:
-            return { ...state, products: action.payload };
-
-        case FETCH_PRODUCTS_SUCCESS:
             return { ...state, isLoading: action.payload };
 
+        case FETCH_PRODUCTS_SUCCESS:                
+            return { ...state, products: action.payload };
+
         case FETCH_PRODUCTS_ERROR:
-            return { ...state, error: action.payload }
+            return { ...state, error: action.payload };
 
         default:
             return state;
     }
 }
 
-export default produtcReducer;
+export default productReducer;

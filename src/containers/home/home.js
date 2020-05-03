@@ -9,22 +9,24 @@ import "./home.scss"
 
 const Home = (props) => {
 
-    const data = useSelector(state => state.productsData)    
+    const data = useSelector(state => state.productsData)
 
     useEffect(() => {
         props.onFetch();
     }, [])
 
     return (
-        <section>
-            {
-                data.isLoading === true ?
-                    <p>Loading!</p> : (data.error ? <p>{data.error.message}</p> :
-                        data.products.map(({ id, imagem, nome, preco, preco_promocional }) => {
-                            return <Cards key={id} imagem={imagem} nome={nome} preco={preco} preco_promocional={preco_promocional} />
-                        }))
-            }
-        </section>
+        <>
+            <section>
+                {
+                    data.isLoading === true ?
+                        <p>Loading!</p> : (data.error ? <p>{data.error.message}</p> :
+                            data.products.map(({ id, imagem, nome, preco, preco_promocional, selo, discount }) => {
+                                return <Cards key={id} imagem={imagem} nome={nome} preco={preco} preco_promocional={preco_promocional} selo={selo} discount={discount}/>
+                            }))
+                }
+            </section>
+        </>
     )
 }
 

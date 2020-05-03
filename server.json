@@ -30,6 +30,7 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
                 "moda"
             ]
@@ -63,9 +64,9 @@
                     "size": "GG"
                 }
             ],
-            "selo": true,
+            "selo": false,
+            "discount": 30,
             "categorias": [
-                "moda",
                 "bolsa"
             ]
         },
@@ -99,8 +100,8 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
-                "moda",
                 "bolsa"
             ]
         },
@@ -134,8 +135,8 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
-                "moda",
                 "bolsa"
             ]
         },
@@ -168,7 +169,8 @@
                     "size": "GG"
                 }
             ],
-            "selo": true,
+            "selo": false,
+            "discount": 30,
             "categorias": [
                 "moda"
             ]
@@ -203,6 +205,7 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
                 "moda"
             ]
@@ -237,6 +240,7 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
                 "moda"
             ]
@@ -271,6 +275,7 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
                 "moda"
             ]
@@ -305,6 +310,7 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
                 "moda"
             ]
@@ -339,6 +345,7 @@
                 }
             ],
             "selo": true,
+            "discount": 30,
             "categorias": [
                 "moda"
             ]

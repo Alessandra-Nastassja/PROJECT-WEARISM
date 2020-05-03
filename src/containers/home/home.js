@@ -21,8 +21,8 @@ const Home = (props) => {
                 {
                     data.isLoading === true ?
                         <p>Loading!</p> : (data.error ? <p>{data.error.message}</p> :
-                            data.products.map(({ id, imagem, nome, preco, preco_promocional, selo, discount }) => {
-                                return <Cards key={id} imagem={imagem} nome={nome} preco={preco} preco_promocional={preco_promocional} selo={selo} discount={discount}/>
+                            data.products.map(({ id, imagem, nome, preco, preco_promocional, selo, percentual_desconto }) => {
+                                return <Cards key={id} imagem={imagem} nome={nome} preco={preco} preco_promocional={preco_promocional} selo={selo} percentual_desconto={percentual_desconto}/>
                             }))
                 }
             </section>
@@ -38,6 +38,7 @@ const mapStateToProps = (state) => {
     }
 }
 
+// Utilizando a action para carregar os dados do GET
 const mapDispatchToProps = (dispatch) => {
     return {
         onFetch: () => {

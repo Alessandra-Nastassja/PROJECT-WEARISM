@@ -21,8 +21,8 @@ const Cards = (props) => {
                             </a> : ''
                     }
                     {
-                        props.selo && props.discount ?
-                            <span className="promocao">{props.discount}%</span> : ''
+                        props.selo && props.percentual_desconto ?
+                            <span className="promocao">{props.percentual_desconto}%</span> : ''
                     }
                 </div>
                 <div className="card__title">

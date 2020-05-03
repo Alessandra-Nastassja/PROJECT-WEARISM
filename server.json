@@ -30,7 +30,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "moda"
             ]
@@ -65,7 +65,7 @@
                 }
             ],
             "selo": false,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "bolsa"
             ]
@@ -100,7 +100,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "bolsa"
             ]
@@ -135,7 +135,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "bolsa"
             ]
@@ -170,7 +170,7 @@
                 }
             ],
             "selo": false,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "moda"
             ]
@@ -205,7 +205,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "moda"
             ]
@@ -240,7 +240,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "moda"
             ]
@@ -275,7 +275,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "moda"
             ]
@@ -310,7 +310,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "moda"
             ]
@@ -345,7 +345,7 @@
                 }
             ],
             "selo": true,
-            "discount": 30,
+            "percentual_desconto": 30,
             "categorias": [
                 "moda"
             ]

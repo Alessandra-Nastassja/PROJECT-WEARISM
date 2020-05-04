@@ -1,15 +1,19 @@
 import React from "react";
+import { useHistory } from 'react-router';
 
 import "./cards.scss";
 
 const Cards = (props) => {
+    const history = useHistory();
     return (
         <div className="content__cards">
             <div className="card" id={props.id}>
                 <div className="card__img">
                     {
                         props.imagem ?
-                            <img src={props.imagem} alt={props.nome} /> :
+                            <a href={`/product/${props.id}`}>
+                                <img src={props.imagem} alt={props.nome} title={props.nome} />
+                            </a> :
                             <div className="img__indisponivel">
                                 <p>Imagem indisponível</p>
                             </div>

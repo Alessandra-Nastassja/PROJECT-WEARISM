@@ -10,29 +10,10 @@ header .content__header {
     justify-content: space-between;
     align-items: center;
 
-    .header__search .search {
-        position: relative;
-        min-width: 250px;
-
-        .input__search {
-            width: 100%;
-            background-color: $cinza-claro;
-            border: none;
-            padding: 15px 5px;
-            border-radius: 15px;
-            font-size: 18px;
-            font-style: italic;
-        }
-
-        .btn__search {
-            position: absolute;
-            top: 13px;
-            right: 0;
-            z-index: 10;
-            border: none;
-            background: transparent;
-            outline: none;
-            color: $cinza;
+    .header__logo{
+        a{
+            text-decoration: none;
+            color: $preto;
         }
     }
 

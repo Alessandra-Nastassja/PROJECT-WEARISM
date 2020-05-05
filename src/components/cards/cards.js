@@ -1,10 +1,8 @@
 import React from "react";
-import { useHistory } from 'react-router';
 
 import "./cards.scss";
 
 const Cards = (props) => {
-    const history = useHistory();
     return (
         <div className="content__cards">
             <div className="card" id={props.id}>

@@ -5,7 +5,7 @@ import "./cards.scss";
 const Cards = (props) => {
     return (
         <div className="content__cards">
-            <div className="card" id={props.id}>
+            <div className="card" data-testid="product" id={props.id}>
                 <div className="card__img">
                     {
                         props.imagem ?

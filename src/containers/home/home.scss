@@ -1,1 +1,23 @@
 @import 'src/App.scss';
+
+.title__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 3%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+    p{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 2.2em;
+        font-style: oblique;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    small{
+        font-size: 1em;
+        color: $cinza;
+    }
+}

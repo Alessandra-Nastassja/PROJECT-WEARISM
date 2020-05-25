@@ -17,12 +17,16 @@ const Home = (props) => {
 
     return (
         <>
+            <div className="title__section">
+                <p>Destaque</p>
+                <small>{data.products.length} items</small>
+            </div>
             <section>
                 {
                     data.isLoading === true ?
                         <p>Loading!</p> : (data.error ? <p>{data.error.message}</p> :
                             data.products.map(({ id, imagem, nome, preco, preco_promocional, selo, discount }) => {
-                                return <Cards key={id} imagem={imagem} nome={nome} preco={preco} preco_promocional={preco_promocional} selo={selo} discount={discount}/>
+                                return <Cards key={id} id={id} imagem={imagem} nome={nome} preco={preco} preco_promocional={preco_promocional} selo={selo} discount={discount} />
                             }))
                 }
             </section>

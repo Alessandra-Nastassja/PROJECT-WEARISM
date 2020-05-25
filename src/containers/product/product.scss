@@ -1,0 +1,57 @@
+@import "src/App.scss";
+
+section.content__product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3%;
+
+    .product__description {
+        .product__title {
+            font-weight: 500;
+        }
+
+        .product__price {
+            font-weight: 700;
+
+            &--regular {
+                color: $cinza;
+                text-decoration: line-through;
+                margin-right: 15px;
+            }
+        }
+
+        .product__installments{
+            color: $cinza;
+        }
+        
+        .product__btn {
+            &--size {
+                cursor: pointer;
+                font-weight: 600;
+                padding: 0.8rem 1rem;
+                border: 0.05rem solid #dfdfdf;
+                margin-right: 0.8rem;
+                background: transparent;
+                outline: none;
+                border-radius: 0.5rem;
+                font-size: 0.85em;
+            }
+            &--bag button{
+                background-color: $preto;
+                border-radius: .9rem;
+                border: none;
+                color: $branco;
+                display: inline-block;
+                line-height: 1;
+                cursor: pointer;
+                padding: 1.1rem 2rem;
+                transform: translateZ(0);
+                width: 100%;
+                margin-top: 25px;
+                font-size: .9em;
+                font-weight: 600;
+            }
+        }
+    }
+}

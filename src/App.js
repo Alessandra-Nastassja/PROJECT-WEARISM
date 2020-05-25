@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-import Routes from "./Routes";
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
+import firebase from './firebaseConnection';
 
 import './App.scss';
 
 function App() {
+  const [token, setToken] = useState('');
+  
+  useEffect(() => {
+    async function getTokenFirebase() {
+      await firebase.database().ref('token').on('value', (snapshot) => {
+        const valor = snapshot.val();
+        console.log('token', valor);
+      });
+    }
+    
+    getTokenFirebase();
+  }, []);
+
+
   return (
     <>
-      <Header />
-      <Routes />
-      <Footer />
+      <p>token: {token}</p>
     </>
   );
 }
+
 
 export default App;

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./header.scss";
+import Search from '../search/search';
 
 const Header = () => {
+    const [ visible, setVisible ] = useState(false);
+
     return (
         <>
             <header>
@@ -16,9 +19,11 @@ const Header = () => {
                     </div>
                     <div className="header__buy">
                         <div className="search">
-                            <a href="/">
+                            <button onClick={() => {
+                                setVisible(true)
+                            }}>
                                 <i className="fa fa-search"></i>
-                            </a>
+                            </button>
                         </div>
                         <div className="buy">
                             <a href="/">
@@ -28,6 +33,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
+            <Search setVisible={setVisible}/>
         </>
     )
 }

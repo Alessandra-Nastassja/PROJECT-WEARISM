@@ -1,1 +1,68 @@
-@import 'src/App.scss';
+@import "src/App.scss";
+
+header {
+    padding: 0 5%;
+}
+
+header .content__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__search .search {
+        position: relative;
+        min-width: 250px;
+
+        .input__search {
+            width: 100%;
+            background-color: $cinza-claro;
+            border: none;
+            padding: 15px 5px;
+            border-radius: 15px;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .btn__search {
+            position: absolute;
+            top: 13px;
+            right: 0;
+            z-index: 10;
+            border: none;
+            background: transparent;
+            outline: none;
+            color: $cinza;
+        }
+    }
+
+    .header__buy{
+        display: flex;
+    }
+
+    .header__buy .buy, .search{
+        margin: 10px;
+
+        a {
+            color: $cinza;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: $roxo;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header .content__header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    header .content__header .header__search .search {
+        width: 500px;
+    }
+}

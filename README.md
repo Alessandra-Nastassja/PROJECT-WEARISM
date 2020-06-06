@@ -4,12 +4,12 @@
 <p align="center">E-commerce de moda feminina. @codenation</p>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/PROJECT-WEARISM?color=%23ffb9db">
+  <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/PROJECT-WEARISM?color=%239175db">
   <a href="https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alessandra-Nastassja/PROJECT-WEARISM?color=%23ffb9db">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alessandra-Nastassja/PROJECT-WEARISM?color=%239175db">
   </a>
   <a href="https://www.linkedin.com/in/alessandra-nastassja/">
-    <img alt="Made by Alessandra Nastassja" src="https://img.shields.io/badge/made%20by-AlessandraNastassja-%23ffb9db">
+    <img alt="Made by Alessandra Nastassja" src="https://img.shields.io/badge/made%20by-AlessandraNastassja-%239175db">
   </a>
 </p>
 
@@ -112,5 +112,5 @@ Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastas
  ****
  ## Referências: 📑
 
- [Tutorial - Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)
- [Filtros - Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)
+ * [Como funciona o Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)
+ * [Fazendo queries com Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)

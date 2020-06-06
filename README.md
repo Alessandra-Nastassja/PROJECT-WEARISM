@@ -65,21 +65,13 @@ Os layouts abaixo servem de referência visual das funcionalidades, sintam-se li
 
 Para ter acesso, basta clicar [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Wireframe).
 
-#### *Cores e tipografia*
+#### *Cores e tipografia:* 📌 
 
 Veja [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Topografia-e-cores) as principais cores da aplicação.
 
-### *Fluxograma do sistema*
+### *Fluxograma do sistema:* 📌 
 
 Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Fluxos-do-sistema)
-
-### *Tecnologias usadas:* 📌 
-
-- [React](https://pt-br.reactjs.org/docs/getting-started.html);
-- [React Redux](https://redux.js.org/introduction/getting-started)
-- [React Router](https://reacttraining.com/react-router/web/guides/quick-start);
-- [React Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html);
-- [Formik](https://jaredpalmer.com/formik/docs/api/formik);
 
 ****
 ## *Como instalar e rodar ?* 🚀
@@ -106,9 +98,18 @@ Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastas
 
  > *Obs: O projeto irá abrir em seu navegador, rodando no http://localhost:3000*
 
+### *Tecnologias usadas:* 🖥️
+
+*Front-end*
+
+* [React](https://pt-br.reactjs.org/docs/getting-started.html);
+* [React Redux](https://redux.js.org/introduction/getting-started)
+* [React Router](https://reacttraining.com/react-router/web/guides/quick-start);
+* [React Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html);
+* [Formik](https://jaredpalmer.com/formik/docs/api/formik);
  ****
  
- ## Referências:
+ ## Referências: 📑
 
  [Tutorial - Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)
  [Filtros - Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)

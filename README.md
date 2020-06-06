@@ -1,10 +1,17 @@
-# Projeto: Wearism (Fashionista E-commerce)
-E-commerce de moda feminina.
+<h1 align="center">
+  Projeto: Wearism (Fashionista E-commerce)
+</h1>
+<p align="center">E-commerce de moda feminina. @codenation</p>
 
-Desenvolvedora:
-[Alessandra](https://github.com/Alessandra-Nastassja)
-
-#### React acelera dev @codenation 
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/PROJECT-WEARISM?color=%23ffb9db">
+  <a href="https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alessandra-Nastassja/PROJECT-WEARISM?color=%23ffb9db">
+  </a>
+  <a href="https://www.linkedin.com/in/alessandra-nastassja/">
+    <img alt="Made by Alessandra Nastassja" src="https://img.shields.io/badge/made%20by-AlessandraNastassja-%23ffb9db">
+  </a>
+</p>
 
 ****
 ## *Sobre o projeto* ⭐️
@@ -60,13 +67,11 @@ Para ter acesso, basta clicar [aqui](https://github.com/Alessandra-Nastassja/PRO
 
 #### *Cores e tipografia*
 
-![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/cores.jpg)
+Veja [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Topografia-e-cores) as principais cores da aplicação.
 
 ### *Fluxograma do sistema*
 
-Para ver o fluxo em detalhes, clique [aqui](https://whimsical.com/KvoQMy6dBcFU7bABk6UYY2)
-
-![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/fluxo.png)
+Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Fluxos-do-sistema)
 
 ### *Tecnologias usadas:* 📌 
 

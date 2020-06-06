@@ -107,33 +107,7 @@ Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastas
  > *Obs: O projeto irá abrir em seu navegador, rodando no http://localhost:3000*
 
  ****
-
- ### Como funciona Json-server ? 🚀
-
-Baseado em um único json que contém **events, lectures e profile**. Pode-se efetuar o GET,POST, PUT e DELETE. Basta apenas escrever **http://localhost:3001/events**, como por exemplo.
-
-> *Obs.: Ao rodar o projeto, ele irá criar uma API fake em **http://localhost:3003/** e o front **http://localhost:3000/***
-
-*Exemplo:*
-
-Request | URL | Detalhes
--- | -- | --
-GET | /produtos | Busca todos os produtos
-GET | /produtos/1 | Busca um produto
-GET | /produtos?status=promocao | Busca um produto que seja em promoção
-GET | /produtos?_limit=2 | Busca apenas dois produtos
-GET | /produtos?_limit=2&_page=1 | Busca apenas dois protudos por página
-POST | /produtos/ | Salvar um produto
-PUT | /produtos/1 | Editar os dados do produto
-DELETE | /produtos/1 | Remove o produto
-
-
-*Exemplo de filtro - Produto*:
-
-```
-/prodtuos?status=promocao&_limit=10&_page=1
-```
-
+ 
  ## Referências:
 
  [Tutorial - Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)

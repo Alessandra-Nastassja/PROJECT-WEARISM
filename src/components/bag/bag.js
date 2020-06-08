@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
-const Bag = ({setOpenBag}) => {
+import "./bag.scss";
+
+const Bag = ({openBag, setOpenBag}) => {
     return (
-        <article>
-            <div className="content__search">
-                <div className="search__header">
+        <article className={openBag ? 'hidden': ''}>
+            <div className="content__bag">
+                <div className="bag__header">
                     <button onClick={() => {
                         setOpenBag(true)
                     }}>
@@ -15,11 +17,11 @@ const Bag = ({setOpenBag}) => {
                         <span>(0)</span>
                     </p>
                 </div>
-                <div className="search__input">
+                <div className="bag__input">
                     <input placeholder="Busque aqui o seu produto!"/>
                 </div>
-                <div className="search__content">
-                    <p className="search__content--not">Sua sacola esta vazia! <span>😉</span></p>
+                <div className="bag__content">
+                    <p className="bag__content--not">Sua sacola esta vazia! <span>😉</span></p>
                 </div>
             </div>
         </article>

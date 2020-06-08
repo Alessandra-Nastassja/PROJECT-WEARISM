@@ -6,16 +6,15 @@ import "./header.scss";
 import Search from '../search/search';
 
 const Header = () => {
-    const [ openSearch, setoOpenSearch ] = useState(false);
-    const [ openBag, setOpenBag ] = useState(false);
+    const [ openSearch, setOpenSearch ] = useState(true);
+    const [ openBag, setOpenBag ] = useState(true);
 
     function handleOpenSearch() {
-        setoOpenSearch(!openSearch);
+        setOpenSearch(!openSearch);
     }
     function handleOpenBag() {
         setOpenBag(!openBag);
     }
-
     return (
         <>
             <header>
@@ -41,8 +40,14 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <Search setVisible={setoOpenSearch} />
-            <Bag setVisible={setOpenBag} />
+            <Search 
+                openSearch={openSearch} 
+                setOpenSearch={setOpenSearch}
+            />
+            <Bag 
+                openBag={openBag} 
+                setOpenBag={setOpenBag} 
+            />
         </>
     )
 }

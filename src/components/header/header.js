@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 
+import Bag from '../bag/bag';
+
 import "./header.scss";
 import Search from '../search/search';
 
 const Header = () => {
-    const [ visible, setVisible ] = useState(false);
+    const [ openSearch, setOpenSearch ] = useState(true);
+    const [ openBag, setOpenBag ] = useState(true);
 
+    function handleOpenSearch() {
+        setOpenSearch(!openSearch);
+    }
+    function handleOpenBag() {
+        setOpenBag(!openBag);
+    }
     return (
         <>
             <header>
@@ -19,21 +28,26 @@ const Header = () => {
                     </div>
                     <div className="header__buy">
                         <div className="search">
-                            <button onClick={() => {
-                                setVisible(!visible)
-                            }}>
+                            <button onClick={handleOpenSearch}>
                                 <i className="fa fa-search"></i>
                             </button>
                         </div>
                         <div className="buy">
-                            <a href="/">
-                                <i className="fas fa-shopping-bag"></i>
-                            </a>
+                        <button onClick={handleOpenBag}>
+                            <i className="fas fa-shopping-bag"></i>
+                        </button>
                         </div>
                     </div>
                 </div>
             </header>
-            <Search setVisible={setVisible}/>
+            <Search 
+                openSearch={openSearch} 
+                setOpenSearch={setOpenSearch}
+            />
+            <Bag 
+                openBag={openBag} 
+                setOpenBag={setOpenBag} 
+            />
         </>
     )
 }

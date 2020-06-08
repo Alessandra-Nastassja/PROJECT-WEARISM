@@ -1,6 +1,6 @@
 @import "src/App.scss";
 
-article .content__bag{
+article .content__bag {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -11,15 +11,18 @@ article .content__bag{
     height: 100%;
     z-index: 1;
     padding: 1% 2%;
+    -webkit-box-shadow: -7px 5px 39px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -7px 5px 39px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -7px 5px 39px -10px rgba(0, 0, 0, 0.75);
 
-    .bag__header{
+    .bag__header {
         display: flex;
         border-bottom: 1px solid $cinza-claro;
         margin-bottom: 15px;
 
-        p{
+        p {
             font-weight: bold;
-        }        
+        }
         button {
             border: none;
             background: transparent;
@@ -34,21 +37,19 @@ article .content__bag{
             outline: none;
         }
     }
-
-    .bag__input{
-        input{
-            border: 1px solid $cinza-claro;
-            border-radius: 5px;
-            width: 100%;
-            height: 30px;
-        }
-        input:focus {
-            outline:0;
+    .bag__content {
+        .bag__content--not {
+            display: flex;
+            justify-content: center;
+            color: $cinza;
         }
     }
-    .bag__content{
-        .bag__content--not{
-            display: flex;
+    .bag__footer{
+        position: fixed;
+        bottom: 0px;
+
+        .bag__content--title{
+            font-weight: 500;
         }
     }
 }

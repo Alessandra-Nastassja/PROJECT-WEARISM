@@ -2,7 +2,8 @@
 
 article .content__search{
     position: fixed;
-    display: flex;
+    // display: flex;
+    display: none;
     flex-direction: column;
     background: #fff;
     right: 0px;

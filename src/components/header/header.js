@@ -6,7 +6,15 @@ import "./header.scss";
 import Search from '../search/search';
 
 const Header = () => {
-    const [ visible, setVisible ] = useState(false);
+    const [ openSearch, setoOpenSearch ] = useState(false);
+    const [ openBag, setOpenBag ] = useState(false);
+
+    function handleOpenSearch() {
+        setoOpenSearch(!openSearch);
+    }
+    function handleOpenBag() {
+        setOpenBag(!openBag);
+    }
 
     return (
         <>
@@ -21,19 +29,20 @@ const Header = () => {
                     </div>
                     <div className="header__buy">
                         <div className="search">
-                            <button onClick={() => {
-                                setVisible(!visible)
-                            }}>
+                            <button onClick={handleOpenSearch}>
                                 <i className="fa fa-search"></i>
                             </button>
                         </div>
                         <div className="buy">
-                           <Bag />
+                        <button onClick={handleOpenBag}>
+                            <i className="fas fa-shopping-bag"></i>
+                        </button>
                         </div>
                     </div>
                 </div>
             </header>
-            <Search setVisible={setVisible}/>
+            <Search setVisible={setoOpenSearch} />
+            <Bag setVisible={setOpenBag} />
         </>
     )
 }

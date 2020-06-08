@@ -9,6 +9,8 @@ section {
     margin-bottom: 60px;
 }
 
+
+
 .content__cards {
     display: flex;
     flex-direction: column;
@@ -53,7 +55,7 @@ section {
             position: relative;
             bottom: 340px;
             right: -210px;
-            z-index: 1;
+            z-index: 0;
             background-color: #000;
             color: #fff;
             padding: 2px 5px;
@@ -71,6 +73,7 @@ section {
                 align-items: center;
                 width: 100%;
                 height: 100%;
+                color: $cinza;
             }
         }
 

@@ -34,6 +34,9 @@ header .content__header {
         button:hover {
             color: $roxo;
         }
+        button:focus {
+            outline: none;
+        }
     }
 }
 

@@ -1,5 +1,7 @@
 import React from "react";
 
+import Bag from '../bag/bag';
+
 import "./header.scss";
 
 const Header = () => {
@@ -21,9 +23,7 @@ const Header = () => {
                             </a>
                         </div>
                         <div className="buy">
-                            <a href="/">
-                                <i className="fas fa-shopping-bag"></i>
-                            </a>
+                           <Bag />
                         </div>
                     </div>
                 </div>

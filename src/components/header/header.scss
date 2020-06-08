@@ -24,12 +24,14 @@ header .content__header {
     .header__buy .buy, .search{
         margin: 10px;
 
-        a {
+        button {
             color: $cinza;
             font-size: 20px;
+            background: transparent;
+            border: none;
         }
 
-        a:hover {
+        button:hover {
             color: $roxo;
         }
     }

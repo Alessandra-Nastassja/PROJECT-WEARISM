@@ -1,19 +1,26 @@
-# Projeto: Wearism (Fashionista E-commerce)
-E-commerce de moda feminina.
+<h1 align="center">
+  Projeto: Wearism (Fashionista E-commerce)
+</h1>
+<p align="center">E-commerce de moda feminina. @codenation</p>
 
-Desenvolvedora:
-[Alessandra](https://github.com/Alessandra-Nastassja)
-
-#### React acelera dev @codenation 
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/PROJECT-WEARISM?color=%239175db">
+  <a href="https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alessandra-Nastassja/PROJECT-WEARISM?color=%239175db">
+  </a>
+  <a href="https://www.linkedin.com/in/alessandra-nastassja/">
+    <img alt="Made by Alessandra Nastassja" src="https://img.shields.io/badge/made%20by-AlessandraNastassja-%239175db">
+  </a>
+</p>
 
 ****
 ## *Sobre o projeto* ⭐️
 
-### *Objetivo:* 📌 
+### *Objetivo:* 🚩
 
 Como um profissional front-end, você será responsável por desenvolver as principais funcionalidades de um e-commerce de moda feminina, o Fashionista, garantindo a melhor experiência possível para os usuários interagirem com os produtos.
 
-### *Cenário:* 📌 
+### *Cenário:* 👗
 
 Segundo o levantamento, da Webshoppers (Ebit / Nielsen), os e-commerces brasileiros faturaram cerca de R$ 53,2 bilhões em 2018. O segmento “Moda e Acessórios” representa 5,6% do faturamento no varejo online, ocupando a segunda posição entre as categorias de produtos com mais pedidos, perdendo apenas para o segmento de eletroeletrônicos.
 
@@ -44,41 +51,28 @@ Deve ser possível adicionar itens por tamanho no carrinho de compras.
 
 - Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade.
 
-### *Requisitos opcionais:* 📌 
+### *Requisitos opcionais:* 😉
 
 - O carrinho de compras deve persistir entre reloads de página.
 - Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque.
 - Implemente a funcionalidade de busca em tempo real.
 
-### *Wireframe:* 📌 
+**** 
+### *Wireframe:* 😻
 
 Os layouts abaixo servem de referência visual das funcionalidades, sintam-se livres para segui-las ou implementá-las com base em outras referências, desde que atenda às regras e aos requisitos obrigatórios.
 
-*Desktop*
+*Desktop & mobile*
 
-![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_desktop.png)
+Para ter acesso, basta clicar [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Wireframe).
 
-*Mobile*
+#### *Cores e tipografia:* 
 
-![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/wearism_mobile.png)
+Veja [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Topografia-e-cores) as principais cores da aplicação.
 
-#### *Cores e tipografia*
+#### *Fluxograma do sistema:* 
 
-![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/cores.jpg)
-
-### *Fluxograma do sistema*
-
-Para ver o fluxo em detalhes, clique [aqui](https://whimsical.com/KvoQMy6dBcFU7bABk6UYY2)
-
-![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/wireframes/fluxo.png)
-
-### *Tecnologias usadas:* 📌 
-
-- [React](https://pt-br.reactjs.org/docs/getting-started.html);
-- [React Redux](https://redux.js.org/introduction/getting-started)
-- [React Router](https://reacttraining.com/react-router/web/guides/quick-start);
-- [React Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html);
-- [Formik](https://jaredpalmer.com/formik/docs/api/formik);
+Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Fluxos-do-sistema)
 
 ****
 ## *Como instalar e rodar ?* 🚀
@@ -105,35 +99,18 @@ Para ver o fluxo em detalhes, clique [aqui](https://whimsical.com/KvoQMy6dBcFU7b
 
  > *Obs: O projeto irá abrir em seu navegador, rodando no http://localhost:3000*
 
+### *Tecnologias usadas:* 🖥️
+
+*Front-end*
+
+* [React](https://pt-br.reactjs.org/docs/getting-started.html);
+* [React Redux](https://redux.js.org/introduction/getting-started)
+* [React Router](https://reacttraining.com/react-router/web/guides/quick-start);
+* [React Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html);
+* [Formik](https://jaredpalmer.com/formik/docs/api/formik);
+
  ****
+ ## Referências: 📑
 
- ### Como funciona Json-server ? 🚀
-
-Baseado em um único json que contém **events, lectures e profile**. Pode-se efetuar o GET,POST, PUT e DELETE. Basta apenas escrever **http://localhost:3001/events**, como por exemplo.
-
-> *Obs.: Ao rodar o projeto, ele irá criar uma API fake em **http://localhost:3003/** e o front **http://localhost:3000/***
-
-*Exemplo:*
-
-Request | URL | Detalhes
--- | -- | --
-GET | /produtos | Busca todos os produtos
-GET | /produtos/1 | Busca um produto
-GET | /produtos?status=promocao | Busca um produto que seja em promoção
-GET | /produtos?_limit=2 | Busca apenas dois produtos
-GET | /produtos?_limit=2&_page=1 | Busca apenas dois protudos por página
-POST | /produtos/ | Salvar um produto
-PUT | /produtos/1 | Editar os dados do produto
-DELETE | /produtos/1 | Remove o produto
-
-
-*Exemplo de filtro - Produto*:
-
-```
-/prodtuos?status=promocao&_limit=10&_page=1
-```
-
- ## Referências:
-
- [Tutorial - Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)
- [Filtros - Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)
+ * [Como funciona o Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)
+ * [Fazendo queries com Json server](https://code.tutsplus.com/pt/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871)

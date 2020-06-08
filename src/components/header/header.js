@@ -20,7 +20,7 @@ const Header = () => {
                     <div className="header__buy">
                         <div className="search">
                             <button onClick={() => {
-                                setVisible(true)
+                                setVisible(!visible)
                             }}>
                                 <i className="fa fa-search"></i>
                             </button>

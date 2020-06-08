@@ -17,10 +17,13 @@ article .content__search{
         border-bottom: 1px solid $cinza-claro;
         margin-bottom: 15px;
 
+        p{
+            font-weight: bold;
+        }        
         button {
             border: none;
             background: transparent;
-            color: $cinza;
+            color: $preto;
             font-size: 20px;
             margin-right: 10px;
         }

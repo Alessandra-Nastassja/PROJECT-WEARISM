@@ -51,7 +51,7 @@
             "prestacoes": "2x $9.99",
             "tamanhos_disponiveis": [
                 {
-                    "valido": false,
+                    "valido": true,
                     "tamanho": "U",
                     "sku": "2_0_U"
                     
@@ -73,7 +73,7 @@
             "prestacoes": "2x $10",
             "tamanhos_disponiveis": [
                 {
-                    "valido": false,
+                    "valido": true,
                     "tamanho": "U",
                     "sku": "3_0_U"
                 }
@@ -94,7 +94,7 @@
             "prestacoes": "2x $10",
             "tamanhos_disponiveis": [
                 {
-                    "valido": false,
+                    "valido": true,
                     "tamanho": "U",
                     "sku": "4_0_U"
                 }

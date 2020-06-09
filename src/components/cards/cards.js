@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import "./cards.scss";
 
@@ -9,12 +10,14 @@ const Cards = (props) => {
                 <div className="card__img">
                     {
                         props.imagem ?
-                            <a href={`/product/${props.id}`}>
+                            <Link to={`/product/${props.id}`}>
                                 <img src={props.imagem} alt={props.nome} title={props.nome} />
-                            </a> :
-                            <div className="img__indisponivel">
-                                <p>Imagem indisponível</p>
-                            </div>
+                            </Link> :
+                            <Link to={`/product/${props.id}`}>
+                                <div className="img__indisponivel">
+                                    <p>Imagem indisponível</p>
+                                </div>
+                            </Link>
                     }
                     {
                         props.selo ?

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import "./bag.scss";
 
-const Bag = ({openBag, setOpenBag}) => {
+const Bag = ({ openBag, setOpenBag }) => {
     return (
         <article className={openBag ? 'hidden': ''}>
             <div className="content__bag">
@@ -17,11 +17,14 @@ const Bag = ({openBag, setOpenBag}) => {
                         <span>(0)</span>
                     </p>
                 </div>
-                <div className="bag__input">
-                    <input placeholder="Busque aqui o seu produto!"/>
-                </div>
                 <div className="bag__content">
-                    <p className="bag__content--not">Sua sacola esta vazia! <span>😉</span></p>
+                    <p className="bag__content--not">Sua sacola esta vazia! <span role="img" aria-label="icon">😉</span></p>
+                </div>
+                <div className="bag__footer">
+                    <p className="bag__content--title">
+                        Subtotal - 
+                        <span>R$ 0,00</span>
+                    </p>
                 </div>
             </div>
         </article>

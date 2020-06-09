@@ -12,13 +12,10 @@ export const fetchProductSuccess = (data) => {
 }
 
 export const fetchProduct = (id) => {
-
     return (dispatch) => {
         return fetch(`${endpoint}/produtos/${id}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-            
             dispatch(fetchProductSuccess(data));    
         })
     }

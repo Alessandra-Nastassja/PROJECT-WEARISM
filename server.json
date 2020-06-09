@@ -350,6 +350,22 @@
             "categorias": [
                 "moda"
             ]
+        },
+        {
+            "id": 11,
+            "imagem": "",
+            "nome": "Camiseta Amarela",
+            "preco": 19.99,
+            "preco_promocional": 9.99,
+            "em_promocao": true,
+            "prestacoes": "2x $4.99",
+            "tamanhos_disponiveis": [
+            ],
+            "selo": true,
+            "discount": 30,
+            "categorias": [
+                "moda"
+            ]
         }
     ]
 }

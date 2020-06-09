@@ -13,9 +13,11 @@ const Cards = (props) => {
                             <Link to={`/product/${props.id}`}>
                                 <img src={props.imagem} alt={props.nome} title={props.nome} />
                             </Link> :
-                            <div className="img__indisponivel">
-                                <p>Imagem indisponível</p>
-                            </div>
+                            <Link to={`/product/${props.id}`}>
+                                <div className="img__indisponivel">
+                                    <p>Imagem indisponível</p>
+                                </div>
+                            </Link>
                     }
                     {
                         props.selo ?

@@ -10,13 +10,14 @@ const Product = (props) => {
     const [setParamsId] = useState('');
     const [size, setSize] = useState([]);
     const [bag, setBag] = useState([]);
+    const [item, setItem] = useState([]);
 
-    const { 
-        imagem, 
-        nome, 
-        preco_promocional, 
-        preco, prestacoes, 
-        tamanhos_disponiveis 
+    const {
+        imagem,
+        nome,
+        preco_promocional,
+        preco, prestacoes,
+        tamanhos_disponiveis
     } = useSelector(state => state.productsData.product);
 
     const { params: { id } } = useRouteMatch();
@@ -24,7 +25,7 @@ const Product = (props) => {
     useEffect(() => {
         props.setParamsId(id)
 
-    }, [id, setParamsId])
+    }, [id, setParamsId]);
 
     function handleSize(tamanho) {
         setSize([
@@ -32,17 +33,15 @@ const Product = (props) => {
         ])
     }
     function handleSubmit() {
-        const item = {
+        setItem({
             nome,
             imagem,
             preco_promocional,
             preco,
             prestacoes,
             size
-        }         
-
-        setBag(item)
-    }   
+        })
+    }
 
     return (
         <>

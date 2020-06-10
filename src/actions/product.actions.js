@@ -1,8 +1,15 @@
-import { FETCH_PRODUCT_SUCCESS } from './types';
+import { FETCH_PRODUCT_SUCCESS, FETCH_BAG_SUCCESS } from './types';
 
 import { getEnvironmentLocal } from '../utils/environment';
 
 const endpoint = getEnvironmentLocal();
+
+export const fetchBagSucess = (data) => {
+    return {
+        type: FETCH_BAG_SUCCESS,
+        payload: data,
+    }
+}
 
 export const fetchProductSuccess = (data) => {
     return {
@@ -19,4 +26,8 @@ export const fetchProduct = (id) => {
             dispatch(fetchProductSuccess(data));    
         })
     }
+}
+
+export const fetchBag = (data) => {
+    console.log(data);
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 import Bag from '../bag/bag';
 
@@ -6,8 +7,8 @@ import "./header.scss";
 import Search from '../search/search';
 
 const Header = () => {
-    const [ openSearch, setOpenSearch ] = useState(true);
-    const [ openBag, setOpenBag ] = useState(true);
+    const [openSearch, setOpenSearch] = useState(true);
+    const [openBag, setOpenBag] = useState(true);
 
     function handleOpenSearch() {
         setOpenSearch(!openSearch);
@@ -33,20 +34,20 @@ const Header = () => {
                             </button>
                         </div>
                         <div className="buy">
-                        <button onClick={handleOpenBag}>
-                            <i className="fas fa-shopping-bag"></i>
-                        </button>
+                            <button onClick={handleOpenBag}>
+                                <i className="fas fa-shopping-bag"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </header>
-            <Search 
-                openSearch={openSearch} 
+            <Search
+                openSearch={openSearch}
                 setOpenSearch={setOpenSearch}
             />
-            <Bag 
-                openBag={openBag} 
-                setOpenBag={setOpenBag} 
+            <Bag
+                openBag={openBag}
+                setOpenBag={setOpenBag}
             />
         </>
     )

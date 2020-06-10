@@ -21,9 +21,9 @@ const Cards = (props) => {
                     }
                     {
                         props.selo ?
-                            <a href="/" className="liked">
+                            <Link to="/" className="liked">
                                 <i className="far fa-heart"></i>
-                            </a> : ''
+                            </Link> : ''
                     }
                     {
                         props.selo && props.discount ?

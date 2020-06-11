@@ -4,18 +4,18 @@ import { getEnvironmentLocal } from '../utils/environment';
 
 const endpoint = getEnvironmentLocal();
 
-export const fetchBagSucess = (data) => {
-    return {
-        type: FETCH_BAG_SUCCESS,
-        payload: data,
-    }
-}
-
 export const fetchProductSuccess = (data) => {
     return {
         type: FETCH_PRODUCT_SUCCESS,
         payload: data,
     } 
+}
+
+export const fetchBagSucess = (data) => {
+    return {
+        type: FETCH_BAG_SUCCESS,
+        payload: data,
+    }
 }
 
 export const fetchProduct = (id) => {
@@ -29,5 +29,7 @@ export const fetchProduct = (id) => {
 }
 
 export const fetchBag = (data) => {
-    console.log(data);
+    return (dispatch) => {
+        console.log(data);
+    }
 }

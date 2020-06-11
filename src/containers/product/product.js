@@ -6,11 +6,9 @@ import { fetchProduct, fetchBag } from '../../actions/product.actions';
 
 import "./product.scss"
 
-const Product = (props) => {
-    const [setParamsId] = useState('');
-    const [size, setSize] = useState([]);
-    const [bag, setBag] = useState([]);
+const Product = ({ setParamsId, setBag }) => {
     const [item, setItem] = useState([]);
+    const [size, setSize] = useState([]);
 
     const {
         imagem,
@@ -23,25 +21,12 @@ const Product = (props) => {
     const { params: { id } } = useRouteMatch();
 
     useEffect(() => {
-        props.setParamsId(id)
-
+        setParamsId(id)
     }, [id, setParamsId]);
 
-    function handleSize(tamanho) {
-        setSize([
-            ...tamanho
-        ])
-    }
-    function handleSubmit() {
-        setItem({
-            nome,
-            imagem,
-            preco_promocional,
-            preco,
-            prestacoes,
-            size
-        })
-    }
+    useEffect(() => {
+        setBag(item)
+    }, [item, setBag])
 
     return (
         <>
@@ -84,14 +69,20 @@ const Product = (props) => {
                                 tamanhos_disponiveis && tamanhos_disponiveis.map(({ valido, tamanho, sku }) => {
                                     return (
                                         valido ?
-                                            <button key={sku} className="product__btn--size" onClick={() => handleSize(tamanho)}>{tamanho}</button> :
+                                            <button key={sku} className="product__btn--size" onClick={() => setSize([...tamanho])}>{tamanho}</button> :
                                             ''
                                     )
                                 })
                         }
                     </div>
                     <div className="product__btn--bag">
-                        <button onClick={handleSubmit}>Adicionar à sacola</button>
+                        <button onClick={() => setItem([...item, {
+                            nome,
+                            imagem,
+                            preco_promocional,
+                            prestacoes,
+                            size
+                        }])}>Adicionar à sacola</button>
                     </div>
                 </div>
             </section>
@@ -107,6 +98,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
+        setBag: (item) => {
+            dispatch(fetchBag({item}))
+        },
         setParamsId: (id) => {
             dispatch(fetchProduct(id));
         }

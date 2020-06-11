@@ -7,8 +7,8 @@ import { fetchProduct, fetchBag } from '../../actions/product.actions';
 import "./product.scss"
 
 const Product = ({ setParamsId, setBag }) => {
+    const [seletedItems, setSeletedItems] = useState([]);
     const [item, setItem] = useState([]);
-    const [size, setSize] = useState([]);
 
     const {
         imagem,
@@ -27,12 +27,19 @@ const Product = ({ setParamsId, setBag }) => {
     useEffect(() => {
         setBag(item)
     }, [item, setBag])
-
+    
     function handleSelectSize(sku){
-        console.log(sku);
+        const alreadySelected = seletedItems.findIndex(sizes => sizes === sku);
         
-                
+       if (alreadySelected >= 0) {
+           const filteredSizes = seletedItems.filter(sizes => sizes !== sku)
+       
+           setSeletedItems(filteredSizes);
+       }else{
+            setSeletedItems([...seletedItems, sku])
+       }       
     }
+    
     return (
         <>
             <Link to="/">
@@ -64,7 +71,7 @@ const Product = ({ setParamsId, setBag }) => {
                         }
                         <small className="product__installments">em até {prestacoes}</small>
                     </div>
-                    <div>
+                    <div className="content__product-btn">
                         <p>Escolha o tamanho</p>
                         {
                             tamanhos_disponiveis && tamanhos_disponiveis.length === 0 ?
@@ -74,7 +81,7 @@ const Product = ({ setParamsId, setBag }) => {
                                 tamanhos_disponiveis && tamanhos_disponiveis.map(({ valido, tamanho, sku }) => {
                                     return (
                                         valido ?
-                                            <button key={sku} className="product__btn--size" onClick={() => handleSelectSize(sku)}>{tamanho}</button> :
+                                            <button key={sku} className={seletedItems.includes(sku) ? 'selected': ''} onClick={() => handleSelectSize(sku)}>{tamanho}</button> :
                                             ''
                                     )
                                 })
@@ -86,7 +93,7 @@ const Product = ({ setParamsId, setBag }) => {
                             imagem,
                             preco_promocional,
                             prestacoes,
-                            size
+                            size: seletedItems
                         }])}>Adicionar à sacola</button>
                     </div>
                 </div>

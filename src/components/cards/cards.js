@@ -3,42 +3,42 @@ import { Link } from 'react-router-dom';
 
 import "./cards.scss";
 
-const Cards = (props) => {
+const Cards = ({ id, imagem, nome, preco, preco_promocional, selo, discount}) => {    
     return (
         <div className="content__cards">
-            <div className="card" id={props.id}>
+            <div className="card" id={id}>
                 <div className="card__img">
                     {
-                        props.imagem ?
-                            <Link to={`/product/${props.id}`}>
-                                <img src={props.imagem} alt={props.nome} title={props.nome} />
+                        imagem ?
+                            <Link to={`/product/${id}`}>
+                                <img src={imagem} alt={nome} title={nome} />
                             </Link> :
-                            <Link to={`/product/${props.id}`}>
+                            <Link to={`/product/${id}`}>
                                 <div className="img__indisponivel">
                                     <p>Imagem indisponível</p>
                                 </div>
                             </Link>
                     }
                     {
-                        props.selo ?
+                        selo ?
                             <Link to="/" className="liked">
                                 <i className="far fa-heart"></i>
                             </Link> : ''
                     }
                     {
-                        props.selo && props.discount ?
-                            <span className="promocao">{props.discount}%</span> : ''
+                        selo && discount ?
+                            <span className="promocao">{discount}%</span> : ''
                     }
                 </div>
                 <div className="card__title">
-                    <p className="title">{props.nome}</p>
+                    <p className="title">{nome}</p>
                     {
-                        props.preco_promocional ?
+                        preco_promocional ?
                             <p>
-                                <span className="sub__title" id="preco">${props.preco}</span>
-                                <span className="sub__title">${props.preco_promocional}</span>
+                                <span className="sub__title" id="preco">${preco}</span>
+                                <span className="sub__title">${preco_promocional}</span>
                             </p> :
-                            <p className="sub__title">${props.preco}</p>
+                            <p className="sub__title">${preco}</p>
                     }
                 </div>
             </div>

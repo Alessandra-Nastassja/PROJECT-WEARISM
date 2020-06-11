@@ -7,25 +7,25 @@ import Cards from "../../components/cards/cards";
 
 import "./home.scss"
 
-const Home = (props) => {
+const Home = ({onFetch}) => {
 
-    const data = useSelector(state => state.productsData)
+    const { products, isLoading, error  } = useSelector(state => state.productsData);   
 
     useEffect(() => {
-        props.onFetch();
+        onFetch();
     }, [])
 
     return (
         <>
             <div className="title__section">
                 <p>Destaque</p>
-                <small>{data.products.length} items</small>
+                <small>{products.length} items</small>
             </div>
             <section>
                 {
-                    data.isLoading === true ?
-                        <p>Loading!</p> : (data.error ? <p>{data.error.message}</p> :
-                            data.products.map(({ id, imagem, nome, preco, preco_promocional, selo, discount }) => {
+                    isLoading === true ?
+                        <p>Loading!</p> : (error ? <p>{error.message}</p> :
+                            products.map(({ id, imagem, nome, preco, preco_promocional, selo, discount }) => {
                                 return <Cards key={id} id={id} imagem={imagem} nome={nome} preco={preco} preco_promocional={preco_promocional} selo={selo} discount={discount} />
                             }))
                 }

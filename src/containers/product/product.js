@@ -28,6 +28,11 @@ const Product = ({ setParamsId, setBag }) => {
         setBag(item)
     }, [item, setBag])
 
+    function handleSelectSize(sku){
+        console.log(sku);
+        
+                
+    }
     return (
         <>
             <Link to="/">
@@ -64,12 +69,12 @@ const Product = ({ setParamsId, setBag }) => {
                         {
                             tamanhos_disponiveis && tamanhos_disponiveis.length === 0 ?
 
-                                <p>Nenhum tamanho por aqui! <span role="img" aria-label="icon">😶</span></p> :
+                                <p className="product__message">Nenhum tamanho por aqui! <span role="img" aria-label="icon">😶</span></p> :
 
                                 tamanhos_disponiveis && tamanhos_disponiveis.map(({ valido, tamanho, sku }) => {
                                     return (
                                         valido ?
-                                            <button key={sku} className="product__btn--size" onClick={() => setSize([...tamanho])}>{tamanho}</button> :
+                                            <button key={sku} className="product__btn--size" onClick={() => handleSelectSize(sku)}>{tamanho}</button> :
                                             ''
                                     )
                                 })

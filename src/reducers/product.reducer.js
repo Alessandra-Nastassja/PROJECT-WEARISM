@@ -1,13 +1,14 @@
-import { FETCH_PRODUCTS_ERROR, FETCH_PRODUCTS_LOADING, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCT_SUCCESS } from '../actions/types';
+import { FETCH_PRODUCTS_ERROR, FETCH_PRODUCTS_LOADING, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCT_SUCCESS, FETCH_BAG_SUCCESS } from '../actions/types';
 
 const defaultState = {
     error: null,
     products: [],
     product: [],
+    bag: [],
     isLoading: false,
 }   
 
-const productReducer = (state = defaultState, action) => { 
+const productReducer = (state = defaultState, action) => {     
     // Verifica qual ação ele deve tomar
     switch (action.type) {
         
@@ -22,6 +23,9 @@ const productReducer = (state = defaultState, action) => {
 
         case FETCH_PRODUCT_SUCCESS:
             return {...state, product: action.payload}
+
+        case FETCH_BAG_SUCCESS:
+            return {...state, bag: action.payload}
 
         default:
             return state;

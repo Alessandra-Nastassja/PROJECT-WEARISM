@@ -16,7 +16,7 @@ const Product = ({ setParamsId, setBag }) => {
         preco_promocional,
         preco, prestacoes,
         tamanhos_disponiveis
-    } = useSelector(state => state.productsData.product);
+    } = useSelector(state => state.productsData.product);    
 
     const { params: { id } } = useRouteMatch();
 
@@ -39,7 +39,7 @@ const Product = ({ setParamsId, setBag }) => {
             setSeletedItems([...seletedItems, sku])
        }       
     }
-    
+
     return (
         <>
             <Link to="/">

@@ -30,6 +30,7 @@ export const fetchProduct = (id) => {
 
 export const fetchBag = (data) => {
     return (dispatch) => {
-        console.log(data);
+        localStorage.setItem("bag", JSON.stringify({'bag': data}))
+        dispatch(fetchBagSucess(data))
     }
 }

@@ -21,12 +21,15 @@ section.content__product {
             }
         }
 
-        .product__installments{
+        .product__installments {
             color: $cinza;
         }
-        
-        .product__btn {
-            &--size {
+        .product__message {
+            color: $cinza;
+        }
+
+        .content__product-btn {
+            button {
                 cursor: pointer;
                 font-weight: 600;
                 padding: 0.8rem 1rem;
@@ -37,9 +40,16 @@ section.content__product {
                 border-radius: 0.5rem;
                 font-size: 0.85em;
             }
-            &--bag button{
+            .selected{
+                background: #9175db;
+                color: #fff;
+            }
+        }
+
+        .product__btn {
+            &--bag button {
                 background-color: $preto;
-                border-radius: .9rem;
+                border-radius: 0.9rem;
                 border: none;
                 color: $branco;
                 display: inline-block;
@@ -49,7 +59,7 @@ section.content__product {
                 transform: translateZ(0);
                 width: 100%;
                 margin-top: 25px;
-                font-size: .9em;
+                font-size: 0.9em;
                 font-weight: 600;
             }
         }

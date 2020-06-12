@@ -30,6 +30,14 @@ export const fetchProduct = (id) => {
 
 export const fetchBag = (data) => {
     return (dispatch) => {
-        console.log(data);
+        if (localStorage.getItem("state") == null) {
+            localStorage.setItem("state", JSON.stringify({'bag': data}))
+        }else{
+            let state = JSON.parse(localStorage.getItem("state"));
+
+            
+        }       
+
+        dispatch(fetchBagSucess(data))
     }
 }

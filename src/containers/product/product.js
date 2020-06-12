@@ -51,7 +51,7 @@ const Product = ({ setParamsId, setBag }) => {
                         <div className="product__img">
                             {
                                 imagem ?
-                                    <img src={imagem} alt={nome} title={nome} width="400px" /> :
+                                    <img src={imagem} alt={nome} title={nome} /> :
                                     <p>Imagem indisponível</p>
                             }
                         </div>

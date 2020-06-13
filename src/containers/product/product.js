@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
 import { connect, useSelector } from "react-redux";
 
-import { fetchProduct, fetchBag } from '../../actions/product.actions';
+import { fetchProduct } from '../../actions/product.actions';
+import { fetchBag } from '../../actions/bag.actions';
 
 import "./product.scss"
 
@@ -105,12 +106,13 @@ const Product = ({ setParamsId, setBag }) => {
 const mapStateToProps = (state) => {
     return {
         product: state.productsData.product || [],
+        bag: state.bagData.bag || [],
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setBag: (item) => {
+        setBag: (item) => {            
             dispatch(fetchBag(item))
         },
         setParamsId: (id) => {

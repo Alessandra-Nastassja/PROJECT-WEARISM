@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { connect, useSelector } from "react-redux";
+
+import { getBag } from '../../actions/bag.actions';
 
 import "./bag.scss";
 
-const Bag = ({ openBag, setOpenBag }) => {
+const Bag = ({ openBag, setOpenBag, onFetch }) => {
+    const [bag, setBag] = useState([]);
+
+    const items = useSelector(state => state.bagData.shoppingBag)
+
+    useEffect(() => {
+        onFetch();
+    }, [])
+
+    console.log(items);
+    
+
     return (
-        <article className={openBag ? 'hidden': ''}>
+        <article className={openBag ? 'hidden' : ''}>
             <div className="content__bag">
                 <div className="bag__header">
                     <button onClick={() => {
@@ -22,7 +36,7 @@ const Bag = ({ openBag, setOpenBag }) => {
                 </div>
                 <div className="bag__footer">
                     <p className="bag__content--title">
-                        Subtotal - 
+                        Subtotal -
                         <span>R$ 0,00</span>
                     </p>
                 </div>
@@ -31,4 +45,19 @@ const Bag = ({ openBag, setOpenBag }) => {
     );
 }
 
-export default Bag;
+const mapStateToProps = (state) => {
+    return {
+        bag: state.bagData.shoppingBag || [],
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onFetch: () => {
+            dispatch(getBag());
+        }
+    }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Bag);

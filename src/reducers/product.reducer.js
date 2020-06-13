@@ -4,7 +4,6 @@ const defaultState = {
     error: null,
     products: [],
     product: [],
-    bag: [],
     isLoading: false,
 }   
 
@@ -23,9 +22,6 @@ const productReducer = (state = defaultState, action) => {
 
         case FETCH_PRODUCT_SUCCESS:
             return {...state, product: action.payload}
-
-        case FETCH_BAG_SUCCESS:
-            return {...state, bag: action.payload}
 
         default:
             return state;

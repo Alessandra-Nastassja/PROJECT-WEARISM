@@ -29,33 +29,18 @@ export const fetchProduct = (id) => {
 }
 
 export const fetchBag = (data) => {
+    return (dispatch) => {
+        var listaCarrinho = JSON.parse(localStorage.getItem("state"));
 
-    var listaCarrinho = JSON.parse(localStorage.getItem("state"));
-
-    if (listaCarrinho != null) {
-        if (data.length !== 0) {
-            console.log('aaa');
-
-            let list = [];
-            
-            list = [...listaCarrinho, data]            
+        if (listaCarrinho != null & data.length !== 0) {
+            var list = Object.assign({}, data, listaCarrinho);
 
             localStorage.setItem('state', JSON.stringify(list));
+
+            dispatch(fetchBagSucess(list))
+
+        } if (listaCarrinho == null) {
+            localStorage.setItem('state', JSON.stringify([]));
         }
-
-    } else {
-        console.log('bbb');
-        if (data.length !== 0) {
-            console.log('ccc');
-            
-            localStorage.setItem('state', JSON.stringify(data));
-        }
-
-        console.log('ddd');
-        
-    }
-
-    return (dispatch) => {
-        // dispatch(fetchBagSucess(data))
     }
 }

@@ -111,7 +111,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         setBag: (item) => {
-            dispatch(fetchBag({item}))
+            dispatch(fetchBag(item))
         },
         setParamsId: (id) => {
             dispatch(fetchProduct(id));

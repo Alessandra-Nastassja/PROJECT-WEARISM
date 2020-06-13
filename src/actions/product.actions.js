@@ -8,7 +8,7 @@ export const fetchProductSuccess = (data) => {
     return {
         type: FETCH_PRODUCT_SUCCESS,
         payload: data,
-    } 
+    }
 }
 
 export const fetchBagSucess = (data) => {
@@ -21,23 +21,41 @@ export const fetchBagSucess = (data) => {
 export const fetchProduct = (id) => {
     return (dispatch) => {
         return fetch(`${endpoint}/produtos/${id}`)
-        .then(res => res.json())
-        .then(data => {
-            dispatch(fetchProductSuccess(data));    
-        })
+            .then(res => res.json())
+            .then(data => {
+                dispatch(fetchProductSuccess(data));
+            })
     }
 }
 
 export const fetchBag = (data) => {
-    return (dispatch) => {
-        if (localStorage.getItem("state") == null) {
-            localStorage.setItem("state", JSON.stringify({'bag': data}))
-        }else{
-            let state = JSON.parse(localStorage.getItem("state"));
 
+    var listaCarrinho = JSON.parse(localStorage.getItem("state"));
+
+    if (listaCarrinho != null) {
+        if (data.length !== 0) {
+            console.log('aaa');
+
+            let list = [];
             
-        }       
+            list = [...listaCarrinho, data]            
 
-        dispatch(fetchBagSucess(data))
+            localStorage.setItem('state', JSON.stringify(list));
+        }
+
+    } else {
+        console.log('bbb');
+        if (data.length !== 0) {
+            console.log('ccc');
+            
+            localStorage.setItem('state', JSON.stringify(data));
+        }
+
+        console.log('ddd');
+        
+    }
+
+    return (dispatch) => {
+        // dispatch(fetchBagSucess(data))
     }
 }

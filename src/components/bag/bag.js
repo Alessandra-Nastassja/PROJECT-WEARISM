@@ -8,6 +8,8 @@ import "./bag.scss";
 const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
     const [removeItem, setRemoveItem] = useState([]);
     const [index, setIndex] = useState(null);
+    const [counter, setCount] = useState(1)
+    const [subTotal, setSubTotal] = useState();
 
     const items = useSelector(state => state.bagData.shoppingBag);
 
@@ -17,9 +19,9 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
 
     useEffect(() => {
         removeItemBag(removeItem, index)
-    }, [removeItem,index,removeItemBag])
+    }, [removeItem, index, removeItemBag])
 
-    var bag = Object.values(items);   
+    var bag = Object.values(items);
 
     return (
         <article className={openBag ? 'hidden' : ''}>
@@ -32,13 +34,13 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
                     </button>
                     <p>
                         Sacola
-                        <span>(0)</span>
+                        <span>({counter})</span>
                     </p>
                 </div>
                 <div className="bag__content">
                     {
-                        bag && bag.map((item, index) => {    
-                                                    
+                        bag && bag.map((item, index) => {
+
                             return (
                                 <div className="bag__content--item" key={item.id}>
                                     <figure className="item__img">
@@ -60,9 +62,9 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
                                             })
                                         }
                                         <div className="item__desc--qtd">
-                                            <button>-</button>
-                                            <p>2</p>
-                                            <button>+</button>
+                                            <button onClick={() => setCount(counter - 1)}>-</button>
+                                            <p>{counter}</p>
+                                            <button onClick={() => setCount(counter + 1)}>+</button>
                                         </div>
                                     </div>
                                     <div className="item__preco">

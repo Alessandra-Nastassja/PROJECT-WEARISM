@@ -37,8 +37,10 @@ Oferecer a melhor experiência aos usuários que interagem com os produtos no de
 - Utilize BEM CSS para escrever os estilos.
 - Deve-se fazer deploy do projeto, servindo-o no Netlify.
 - Não utilize frameworks CSS como Bootstrap, Foundation e afins.
-- Requisitos obrigatórios
-- Para cada item do catálogo de produtos as seguintes informações devem estar na página:
+
+
+### *Requisitos obrigatórios: * 📌 
+- Para cada item do catálogo de produtos as seguintes informações devem estar na página: :heavy_check_mark:
 
 Imagem
 Nome
@@ -47,15 +49,16 @@ Status “Em promoção”
 Preço promocional (se disponível)
 Tamanhos disponíveis
 Selo “Promoção”
-Deve ser possível adicionar itens por tamanho no carrinho de compras.
 
-- Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade.
+- Deve ser possível adicionar itens por tamanho no carrinho de compras. :heavy_check_mark:
+
+- Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade. :warning:
 
 ### *Requisitos opcionais:* 😉
 
-- O carrinho de compras deve persistir entre reloads de página.
-- Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque.
-- Implemente a funcionalidade de busca em tempo real.
+- O carrinho de compras deve persistir entre reloads de página. :warning:
+- Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque. :heavy_check_mark:
+- Implemente a funcionalidade de busca em tempo real. :warning:
 
 **** 
 ### *Wireframe:* 😻

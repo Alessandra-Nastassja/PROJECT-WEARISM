@@ -42,17 +42,17 @@ Oferecer a melhor experiência aos usuários que interagem com os produtos no de
 ### Requisitos obrigatórios: 📌 
 - Para cada item do catálogo de produtos as seguintes informações devem estar na página: :heavy_check_mark:
 
-Imagem
-Nome
-Preço
-Status “Em promoção”
-Preço promocional (se disponível)
-Tamanhos disponíveis
-Selo “Promoção”
+* Imagem
+* Nome
+* Preço
+* Status “Em promoção”
+* Preço promocional (se disponível)
+* Tamanhos disponíveis
+* Selo “Promoção”
 
 - Deve ser possível adicionar itens por tamanho no carrinho de compras. :heavy_check_mark:
 
-- Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade. :warning:
+- Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade. :heavy_check_mark:
 
 ### *Requisitos opcionais:* 😉
 

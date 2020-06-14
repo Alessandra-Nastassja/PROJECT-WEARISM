@@ -17,7 +17,7 @@ const Product = ({ setParamsId, setBag }) => {
         preco_promocional,
         preco, prestacoes,
         tamanhos_disponiveis
-    } = useSelector(state => state.productsData.product);    
+    } = useSelector(state => state.productsData.product);
 
     const { params: { id } } = useRouteMatch();
 
@@ -28,24 +28,26 @@ const Product = ({ setParamsId, setBag }) => {
     useEffect(() => {
         setBag(item)
     }, [item, setBag])
-    
-    function handleSelectSize(sku){
+
+    function handleSelectSize(sku) {
         const alreadySelected = seletedItems.findIndex(sizes => sizes === sku);
-        
-       if (alreadySelected >= 0) {
-           const filteredSizes = seletedItems.filter(sizes => sizes !== sku)
-       
-           setSeletedItems(filteredSizes);
-       }else{
+
+        if (alreadySelected >= 0) {
+            const filteredSizes = seletedItems.filter(sizes => sizes !== sku)
+
+            setSeletedItems(filteredSizes);
+        } else {
             setSeletedItems([...seletedItems, sku])
-       }       
+        }
     }
 
     return (
         <>
-            <Link to="/">
-                Home
-            </Link>
+            <div>
+                <Link to="/" style={{paddingLeft: 60}}>
+                    Home
+                </Link>
+            </div>
             <section className="content__product">
                 <div className="product__header">
                     <div className="product__card">
@@ -82,7 +84,7 @@ const Product = ({ setParamsId, setBag }) => {
                                 tamanhos_disponiveis && tamanhos_disponiveis.map(({ valido, tamanho, sku }) => {
                                     return (
                                         valido ?
-                                            <button key={sku} className={seletedItems.includes(sku) ? 'selected': ''} onClick={() => handleSelectSize(sku)}>{tamanho}</button> :
+                                            <button key={sku} className={seletedItems.includes(sku) ? 'selected' : ''} onClick={() => handleSelectSize(sku)}>{tamanho}</button> :
                                             ''
                                     )
                                 })
@@ -114,7 +116,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setBag: (item) => {            
+        setBag: (item) => {
             dispatch(fetchBag(item))
         },
         setParamsId: (id) => {

@@ -21,10 +21,6 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
         removeItemBag(removeItem, index)
     }, [removeItem, index, removeItemBag])
 
-    useEffect(() => {
-       
-    }, [])
-
     var bag = Object.values(items);
 
     return (

@@ -9,6 +9,7 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
     const [removeItem, setRemoveItem] = useState([]);
     const [index, setIndex] = useState(null);
     const [counter, setCount] = useState(1)
+    const [subTotal, setSubTotal] = useState();
 
     const items = useSelector(state => state.bagData.shoppingBag);
 
@@ -20,8 +21,9 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
         removeItemBag(removeItem, index)
     }, [removeItem, index, removeItemBag])
 
-    const add = () => setCount(counter + 1);
-    const sub = () => setCount(counter - 1);
+    useEffect(() => {
+       
+    }, [])
 
     var bag = Object.values(items);
 
@@ -36,7 +38,7 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
                     </button>
                     <p>
                         Sacola
-                        <span>(0)</span>
+                        <span>({counter})</span>
                     </p>
                 </div>
                 <div className="bag__content">
@@ -64,9 +66,9 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
                                             })
                                         }
                                         <div className="item__desc--qtd">
-                                            <button onClick={sub}>-</button>
+                                            <button onClick={() => setCount(counter - 1)}>-</button>
                                             <p>{counter}</p>
-                                            <button onClick={add}>+</button>
+                                            <button onClick={() => setCount(counter + 1)}>+</button>
                                         </div>
                                     </div>
                                     <div className="item__preco">

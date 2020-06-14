@@ -45,8 +45,6 @@ const Search = ({ openSearch, setOpenSearch, setSearch, getProducts }) => {
     );
 }
 const mapStateToProps = (state) => {
-    console.log(state);
-    
     return {
         products: state.productsData.products || [],
         search: state.searchData.search || []

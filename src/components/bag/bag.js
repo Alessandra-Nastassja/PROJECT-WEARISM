@@ -7,7 +7,7 @@ import "./bag.scss";
 
 const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
     const [removeItem, setRemoveItem] = useState([]);
-    const [index, setIndex] = useState();
+    const [index, setIndex] = useState(null);
 
     const items = useSelector(state => state.bagData.shoppingBag);
 

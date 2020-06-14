@@ -7,7 +7,7 @@ export const getBagSuccess = (data) => {
     }
 }
 
-export const fetchBag = (data) => {    
+export const fetchBag = (data) => {
     return (dispatch) => {
         var listaCarrinho = JSON.parse(localStorage.getItem("state"));
 
@@ -16,8 +16,8 @@ export const fetchBag = (data) => {
 
             localStorage.setItem('state', JSON.stringify(list));
 
-            dispatch(getBagSuccess(list))    
-                    
+            dispatch(getBagSuccess(list))
+
         } if (listaCarrinho == null) {
             localStorage.setItem('state', JSON.stringify([]));
         }
@@ -29,26 +29,24 @@ export const getBag = () => {
         let items = JSON.parse(localStorage.getItem("state"));
 
         var list = Object.assign({}, items)
-       
+
         dispatch(getBagSuccess(list))
     }
 }
 
-export const removeBag = (id, index) => {   
+export const removeBag = (id, index) => {
     return (dispatch) => {
         let items = JSON.parse(localStorage.getItem("state"));
 
-        if (items != null) {
+        if (items != null && index !== null) {
             var bag = Object.values(items);
-    
-            bag.splice(index,1); 
-            
+
+            bag.splice(index, 1);
+
             localStorage.setItem('state', JSON.stringify(bag));
-            
-            dispatch(getBagSuccess(bag)) 
-                    
-        } if (items == null) {
-            localStorage.setItem('state', JSON.stringify([])); 
+
+            dispatch(getBagSuccess(bag))
+
         }
     }
 }

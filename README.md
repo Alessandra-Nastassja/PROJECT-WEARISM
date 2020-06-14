@@ -28,18 +28,18 @@ Oferecer a melhor experiência aos usuários que interagem com os produtos no de
 
 ### *Principais funcionalidades:* 📌 
 
-- Deve implementar as funcionalidades apresentadas nos wireframes / layouts.
-- Deve ser mobile first, possuindo uma experiência satisfatória tanto em mobile quanto em desktop.
-- Deve consumir a API do catálogo de produtos.
-- O estado global da aplicação deverá ser gerenciado com Redux
-- Deve ser um SPA (Single Page Application).
-- Todos os produtos da API devem ser exibidos.
-- Utilize BEM CSS para escrever os estilos.
-- Deve-se fazer deploy do projeto, servindo-o no Netlify.
-- Não utilize frameworks CSS como Bootstrap, Foundation e afins.
+- Deve implementar as funcionalidades apresentadas nos wireframes / layouts. :warning:
+- Deve ser mobile first, possuindo uma experiência satisfatória tanto em mobile quanto em desktop. :heavy_check_mark:
+- Deve consumir a API do catálogo de produtos. :heavy_check_mark:
+- O estado global da aplicação deverá ser gerenciado com Redux. :heavy_check_mark:
+- Deve ser um SPA (Single Page Application). :heavy_check_mark:
+- Todos os produtos da API devem ser exibidos. :heavy_check_mark:
+- Utilize BEM CSS para escrever os estilos. :heavy_check_mark:
+- Deve-se fazer deploy do projeto, servindo-o no Netlify. :warning:
+- Não utilize frameworks CSS como Bootstrap, Foundation e afins. :heavy_check_mark:
 
 
-### *Requisitos obrigatórios: * 📌 
+### Requisitos obrigatórios: 📌 
 - Para cada item do catálogo de produtos as seguintes informações devem estar na página: :heavy_check_mark:
 
 Imagem
@@ -56,7 +56,7 @@ Selo “Promoção”
 
 ### *Requisitos opcionais:* 😉
 
-- O carrinho de compras deve persistir entre reloads de página. :warning:
+- O carrinho de compras deve persistir entre reloads de página. :heavy_check_mark:
 - Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque. :heavy_check_mark:
 - Implemente a funcionalidade de busca em tempo real. :warning:
 

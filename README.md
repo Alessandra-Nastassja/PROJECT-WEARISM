@@ -56,7 +56,7 @@ Selo “Promoção”
 
 ### *Requisitos opcionais:* 😉
 
-- O carrinho de compras deve persistir entre reloads de página. :warning:
+- O carrinho de compras deve persistir entre reloads de página. :heavy_check_mark:
 - Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque. :heavy_check_mark:
 - Implemente a funcionalidade de busca em tempo real. :warning:
 

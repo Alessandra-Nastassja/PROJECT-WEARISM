@@ -14,7 +14,7 @@ const Bag = ({ openBag, setOpenBag, onFetch }) => {
         onFetch();
     }, [])
 
-    console.log(items);
+    // console.log(items);
     
 
     return (

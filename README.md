@@ -81,7 +81,7 @@ Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastas
 ### *Resultado:* :heavy_check_mark:
 O projeto foi realizado seguindo as especificações solicitadas a cima.
 
-
+![](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/blob/master/src/assets/imagens/captured.gif)
 
 > Obs.: Algumas especificações precisam ser melhores desenvolvidas.
 

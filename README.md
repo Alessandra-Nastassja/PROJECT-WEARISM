@@ -78,6 +78,14 @@ Veja [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Topogra
 Para ver o fluxo em detalhes, clique [aqui](https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/wiki/Fluxos-do-sistema)
 
 ****
+### *Resultado:* :heavy_check_mark:
+O projeto foi realizado seguindo as especificações solicitadas a cima.
+
+
+
+> Obs.: Algumas especificações precisam ser melhores desenvolvidas.
+
+**** 
 ## *Como instalar e rodar ?* 🚀
 ###  *Pré-requisitos:*
 1. Ter o **[Node js](https://nodejs.org/en/) instalado** e junto dele a **[NPM](https://www.npmjs.com/)**;

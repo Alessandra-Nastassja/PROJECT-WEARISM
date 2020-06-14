@@ -2,7 +2,9 @@
   Projeto: Wearism (Fashionista E-commerce)
 </h1>
 <p align="center">E-commerce de moda feminina. @codenation</p>
-
+<p align="center">
+  <a href="https://wearism.netlify.app/" target="_black">Demo</a>
+</p>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/PROJECT-WEARISM?color=%239175db">
   <a href="https://github.com/Alessandra-Nastassja/PROJECT-WEARISM/commits/master">

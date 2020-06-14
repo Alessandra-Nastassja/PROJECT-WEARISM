@@ -6,6 +6,7 @@ export const getBagSuccess = (data) => {
         payload: data,
     }
 }
+
 export const fetchBag = (data) => {    
     return (dispatch) => {
         var listaCarrinho = JSON.parse(localStorage.getItem("state"));
@@ -28,7 +29,26 @@ export const getBag = () => {
         let items = JSON.parse(localStorage.getItem("state"));
 
         var list = Object.assign({}, items)
-
+       
         dispatch(getBagSuccess(list))
+    }
+}
+
+export const removeBag = (id, index) => {   
+    return (dispatch) => {
+        let items = JSON.parse(localStorage.getItem("state"));
+
+        if (items != null) {
+            var bag = Object.values(items);
+    
+            bag.splice(index,1); 
+            
+            localStorage.setItem('state', JSON.stringify(bag));
+            
+            dispatch(getBagSuccess(bag)) 
+                    
+        } if (items == null) {
+            localStorage.setItem('state', JSON.stringify([])); 
+        }
     }
 }

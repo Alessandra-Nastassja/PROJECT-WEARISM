@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { connect, useSelector } from "react-redux";
 
-import { getBag } from '../../actions/bag.actions';
+import { getBag, removeBag } from '../../actions/bag.actions';
 
 import "./bag.scss";
 
-const Bag = ({ openBag, setOpenBag, onFetch }) => {
+const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
+    const [removeItem, setRemoveItem] = useState([]);
+    const [index, setIndex] = useState();
+
     const items = useSelector(state => state.bagData.shoppingBag);
 
     useEffect(() => {
         onFetch();
     }, [])
 
-    var bag = Object.values(items)
+    useEffect(() => {
+        removeItemBag(removeItem, index)
+    }, [removeItem,index,removeItemBag])
+
+    var bag = Object.values(items);   
 
     return (
         <article className={openBag ? 'hidden' : ''}>
@@ -30,8 +37,8 @@ const Bag = ({ openBag, setOpenBag, onFetch }) => {
                 </div>
                 <div className="bag__content">
                     {
-                        bag && bag.map(item => {
-
+                        bag && bag.map((item, index) => {    
+                                                    
                             return (
                                 <div className="bag__content--item" key={item.id}>
                                     <figure className="item__img">
@@ -41,7 +48,7 @@ const Bag = ({ openBag, setOpenBag, onFetch }) => {
                                                 <p>Imagem indisponível</p>
 
                                         }
-                                        <button>Remover item</button>
+                                        <button onClick={() => setRemoveItem(item.id), () => setIndex(index)}>Remover item</button>
                                     </figure>
                                     <div className="item__desc">
                                         <p>{item.nome}</p>
@@ -96,6 +103,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         onFetch: () => {
             dispatch(getBag());
+        },
+        removeItemBag: (removeItem, index) => {
+            dispatch(removeBag(removeItem, index));
         }
     }
 }

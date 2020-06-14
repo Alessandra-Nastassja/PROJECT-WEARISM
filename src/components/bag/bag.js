@@ -8,6 +8,7 @@ import "./bag.scss";
 const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
     const [removeItem, setRemoveItem] = useState([]);
     const [index, setIndex] = useState(null);
+    const [counter, setCount] = useState(1)
 
     const items = useSelector(state => state.bagData.shoppingBag);
 
@@ -17,9 +18,12 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
 
     useEffect(() => {
         removeItemBag(removeItem, index)
-    }, [removeItem,index,removeItemBag])
+    }, [removeItem, index, removeItemBag])
 
-    var bag = Object.values(items);   
+    const add = () => setCount(counter + 1);
+    const sub = () => setCount(counter - 1);
+
+    var bag = Object.values(items);
 
     return (
         <article className={openBag ? 'hidden' : ''}>
@@ -37,8 +41,8 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
                 </div>
                 <div className="bag__content">
                     {
-                        bag && bag.map((item, index) => {    
-                                                    
+                        bag && bag.map((item, index) => {
+
                             return (
                                 <div className="bag__content--item" key={item.id}>
                                     <figure className="item__img">
@@ -60,9 +64,9 @@ const Bag = ({ openBag, setOpenBag, onFetch, removeItemBag }) => {
                                             })
                                         }
                                         <div className="item__desc--qtd">
-                                            <button>-</button>
-                                            <p>2</p>
-                                            <button>+</button>
+                                            <button onClick={sub}>-</button>
+                                            <p>{counter}</p>
+                                            <button onClick={add}>+</button>
                                         </div>
                                     </div>
                                     <div className="item__preco">

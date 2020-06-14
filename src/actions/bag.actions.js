@@ -1,11 +1,4 @@
-import { FETCH_BAG_SUCCESS, GET_BAG_SUCCESS } from './types';
-
-export const fetchBagSucess = (data) => {
-    return {
-        type: FETCH_BAG_SUCCESS,
-        payload: data,
-    }
-}
+import { GET_BAG_SUCCESS } from './types';
 
 export const getBagSuccess = (data) => {
     return {
@@ -22,8 +15,8 @@ export const fetchBag = (data) => {
 
             localStorage.setItem('state', JSON.stringify(list));
 
-            dispatch(fetchBagSucess(list))            
-
+            dispatch(getBagSuccess(list))    
+                    
         } if (listaCarrinho == null) {
             localStorage.setItem('state', JSON.stringify([]));
         }

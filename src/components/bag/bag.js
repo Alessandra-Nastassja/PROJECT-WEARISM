@@ -6,20 +6,13 @@ import { getBag } from '../../actions/bag.actions';
 import "./bag.scss";
 
 const Bag = ({ openBag, setOpenBag, onFetch }) => {
-    const [bag, setBag] = useState([]);
-
-    const items = useSelector(state => state.bagData.shoppingBag)
+    const items = useSelector(state => state.bagData.shoppingBag);
 
     useEffect(() => {
         onFetch();
     }, [])
 
-    useEffect(() => {
-        setBag(items)
-    }, [items, setBag])
-
-    console.log(bag);
-    
+    var bag = Object.values(items)
 
     return (
         <article className={openBag ? 'hidden' : ''}>
@@ -36,7 +29,51 @@ const Bag = ({ openBag, setOpenBag, onFetch }) => {
                     </p>
                 </div>
                 <div className="bag__content">
-                    <p className="bag__content--not">Sua sacola esta vazia! <span role="img" aria-label="icon">😉</span></p>
+                    {
+                        bag && bag.map(item => {
+
+                            return (
+                                <div className="bag__content--item" key={item.id}>
+                                    <figure className="item__img">
+                                        {
+                                            item.imagem ?
+                                                <img src={item.imagem} alt={item.nome} title={item.nome} /> :
+                                                <p>Imagem indisponível</p>
+
+                                        }
+                                        <button>Remover item</button>
+                                    </figure>
+                                    <div className="item__desc">
+                                        <p>{item.nome}</p>
+                                        {
+                                            item.size.map(size => {
+                                                return (
+                                                    <small>Tamanho: {size}</small>
+                                                );
+                                            })
+                                        }
+                                        <div className="item__desc--qtd">
+                                            <button>-</button>
+                                            <p>2</p>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div className="item__preco">
+                                        {
+                                            item.preco_promocional ?
+                                                <p>$ {item.preco_promocional}</p> :
+                                                <p>$ {item.preco}</p>
+                                        }
+                                        <small>{item.prestacoes}</small>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
+                    {
+                        bag.length === 0 &&
+                        <p className="bag__content--not">Sua sacola esta vazia! <span role="img" aria-label="icon">😉</span></p>
+                    }
                 </div>
                 <div className="bag__footer">
                     <p className="bag__content--title">

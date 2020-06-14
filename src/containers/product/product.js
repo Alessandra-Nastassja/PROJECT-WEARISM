@@ -90,8 +90,10 @@ const Product = ({ setParamsId, setBag }) => {
                     </div>
                     <div className="product__btn--bag">
                         <button onClick={() => setItem([...item, {
+                            id,
                             nome,
                             imagem,
+                            preco,
                             preco_promocional,
                             prestacoes,
                             size: seletedItems

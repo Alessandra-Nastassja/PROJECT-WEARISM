@@ -14,7 +14,11 @@ const Bag = ({ openBag, setOpenBag, onFetch }) => {
         onFetch();
     }, [])
 
-    console.log(items);
+    useEffect(() => {
+        setBag(items)
+    }, [items, setBag])
+
+    console.log(bag);
     
 
     return (

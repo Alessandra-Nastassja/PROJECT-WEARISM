@@ -34,6 +34,8 @@ export const getBag = () => {
     return (dispatch) => {
         let items = JSON.parse(localStorage.getItem("state"));
 
-        dispatch(getBagSuccess(items))
+        var list = Object.assign({}, items)
+
+        dispatch(getBagSuccess(list))
     }
 }

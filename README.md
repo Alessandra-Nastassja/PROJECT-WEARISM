@@ -35,7 +35,7 @@ Oferecer a melhor experiência aos usuários que interagem com os produtos no de
 - Deve ser um SPA (Single Page Application). :heavy_check_mark:
 - Todos os produtos da API devem ser exibidos. :heavy_check_mark:
 - Utilize BEM CSS para escrever os estilos. :heavy_check_mark:
-- Deve-se fazer deploy do projeto, servindo-o no Netlify. :warning:
+- Deve-se fazer deploy do projeto, servindo-o no Netlify. :heavy_check_mark:
 - Não utilize frameworks CSS como Bootstrap, Foundation e afins. :heavy_check_mark:
 
 
@@ -52,13 +52,13 @@ Oferecer a melhor experiência aos usuários que interagem com os produtos no de
 
 - Deve ser possível adicionar itens por tamanho no carrinho de compras. :heavy_check_mark:
 
-- Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade. :heavy_check_mark:
+- Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade. :warning:
 
 ### *Requisitos opcionais:* 😉
 
 - O carrinho de compras deve persistir entre reloads de página. :heavy_check_mark:
 - Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque. :heavy_check_mark:
-- Implemente a funcionalidade de busca em tempo real. :warning:
+- Implemente a funcionalidade de busca em tempo real. :heavy_check_mark:
 
 **** 
 ### *Wireframe:* 😻

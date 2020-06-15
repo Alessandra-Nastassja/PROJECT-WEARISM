@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34b9818e-248a-40d0-a366-ca17a04d394b/deploy-status)](https://app.netlify.com/sites/wearism/deploys)
+
 <h1 align="center">
   Projeto: Wearism (Fashionista E-commerce)
 </h1>
